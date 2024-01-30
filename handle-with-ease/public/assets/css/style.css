@@ -75,8 +75,8 @@
   --bs-body-color: #51565D;
   --bs-body-color-rgb: 81,86,93;
   --bs-transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-  --bs-primary: #26ABA3;
-  --bs-secondary: #F7AB1E;
+  --bs-primary: #548e64 ;
+  --bs-secondary: #0476b2 ;
   --bs-dark: #293039;
   --bs-primary-rgb: 38,171,163;
   --bs-secondary-rgb: 247,171,30;

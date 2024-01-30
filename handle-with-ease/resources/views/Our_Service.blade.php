@@ -1,0 +1,9 @@
+@extends('layout.master')
+@section('content')
+    @include('section.Page_banner_section')
+    @include('section.Service_Section')
+    @include('section.Our_service_about_section')
+    @include('section.Work_process_section')
+    @include('section.Pricing_section')
+    @include('section.Consultation_section_2')
+@endsection
