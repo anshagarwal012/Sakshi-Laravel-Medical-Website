@@ -8,9 +8,9 @@ class Routing extends Controller
 {
     public function root()
     {
-        return redirect('home');
+        return view('home');
     }
-
+#dynamic routing
     public function index(Request $request)
     {
         if (view()->exists($request->path())) {
