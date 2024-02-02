@@ -4,6 +4,5 @@
     @include('section.Service_Section')
     @include('section.Our_service_about_section')
     @include('section.Consultation_process')
-    @include('section.Pricing_section')
     @include('section.Consultation_section_2')
 @endsection

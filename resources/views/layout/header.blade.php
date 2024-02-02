@@ -49,11 +49,11 @@
                         </button>
                     </li>
                     <li>
-                        <a class="btn_hotline" href="{{ url('tel:+918299626136') }}">
-                            <span class="btn_icon">
+                        <a class="btn_hotline">
+                            <!--span class="btn_icon">
                                 <i class="fa-solid fa-phone"></i>
-                            </span>
-                            <span class="btn_text">+918299626136</span>
+                            </span-->
+                            <span class="btn btn-primary btn-sm">Book Appointment</span>
                         </a>
                     </li>
                 </ul>
