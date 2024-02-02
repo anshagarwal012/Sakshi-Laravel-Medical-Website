@@ -75,7 +75,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="hero_image_wrap">
-                    <img src="assets\images\hero\demodoc.jpg" alt="Talking Minds – Psychotherapist Site Template">
+                    <img src="assets\images\hero\hero profile pic.jpg" alt="Hand with Ease">
                 </div>
             </div>
         </div>
