@@ -3,13 +3,13 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget">
-                    <img src="assets/images/about/about_image_1-min.jpg"
+                    <img src="assets/images/about/g_1.jpg"
                         alt="About Image - Talking Minds – Psychotherapist Site Template">
                     <div class="image_shape bg_primary_light"></div>
                     <div class="about_video_icon">
-                        <a class="video_play_btn popup_video" href="">
+                        <!--a class="video_play_btn popup_video" href="">
                             <i class="fa-duotone fa-play"></i>
-                        </a>
+                        </a-->
                     </div>
                 </div>
             </div>
@@ -20,8 +20,10 @@
                             <mark>Dr.Sakshi Chaurasia</mark> — Licensed Mental Health Counselor, Psychotherapist
                         </h2>
                         <p class="section_heading_description mb-0 ">
-                            It is a long established fact that a reader will be distracted by the readable content of a
-                            page. Sed ut perspiciatis unde omnis iste natus error.
+                            Dr. Sakshi, a prominent figure in neurological and pediatric physiotherapy, is devoted to
+                            revolutionizing lives through individualized attention. With an unwavering dedication to
+                            patient welfare, she spearheads our team, delivering customized remedies for people across
+                            all age groups..
                         </p>
                     </div>
                     <div class="row">
@@ -31,23 +33,23 @@
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Personal Consultations</span>
+                                    <span class="info_text">Physiotherapy</span>
                                 </li>
                                 <li>
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Group Therapy</span>
+                                    <span class="info_text">Occupational therapy</span>
                                 </li>
                                 <li>
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Online Therapy</span>
+                                    <span class="info_text">Speech therapy</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-5 col-sm-6">
+                        <!--div class="col-md-5 col-sm-6">
                             <ul class="info_list unordered_list_block">
                                 <li>
                                     <span class="info_icon">
@@ -62,7 +64,7 @@
                                     <span class="info_text">Couple Problem</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div-->
                     </div>
                     <div class="btn_wrap pb-0">
                         <a class="btn btn-primary" href="about.html">
