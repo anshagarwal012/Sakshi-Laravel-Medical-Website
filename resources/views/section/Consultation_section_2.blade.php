@@ -3,15 +3,14 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="image_widget">
-                    <img src="assets/images/about/about_image_11-min.jpg"
-                        alt="About Image - Talking Minds – Psychotherapist Site Template">
+                    <img src="assets/images/about/about_image_11-min.jpg" alt="Handle with Ease">
                     <div class="image_shape bg_secondary_light"></div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="section_heading">
                     <h2 class="section_heading_text mb-0">
-                        Take Care of Your Mental Health
+                        Take Care of Your Health
                     </h2>
                 </div>
                 <div class="row">
@@ -50,7 +49,7 @@
                 <div class="btn_wrap pb-0">
                     <button type="submit" class="btn btn-primary">
                         <span class="btn_text" data-text="Get A Consultation">
-                            Get A Consultation
+                            Book Appointment
                         </span>
                         <span class="btn_icon">
                             <i class="fa-solid fa-arrow-up-right"></i>

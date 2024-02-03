@@ -3,11 +3,10 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget">
-                    <img src="assets/images/about/about_image_1-min.jpg"
-                        alt="About Image - Talking Minds – Psychotherapist Site Template">
+                    <img src="assets/images/about/about_image_1-min.jpg" alt="Handle with Ease">
                     <div class="image_shape bg_primary_light"></div>
                     <div class="about_video_icon">
-                        <a class="video_play_btn popup_video" href="https://www.youtube.com/watch?v=7e90gBu4pas">
+                        <a class="video_play_btn popup_video" href="">
                             <i class="fa-duotone fa-play"></i>
                         </a>
                     </div>
@@ -33,23 +32,23 @@
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Personal Consultations</span>
+                                    <span class="info_text">Physiotherapy</span>
                                 </li>
                                 <li>
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Group Therapy</span>
+                                    <span class="info_text">Occupational therapy</span>
                                 </li>
                                 <li>
                                     <span class="info_icon">
                                         <i class="fa-light fa-circle-check"></i>
                                     </span>
-                                    <span class="info_text">Online Therapy</span>
+                                    <span class="info_text">Speech therapy</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-5 col-sm-6">
+                        <!--div class="col-md-5 col-sm-6">
                             <ul class="info_list unordered_list_block">
                                 <li>
                                     <span class="info_icon">
@@ -64,9 +63,9 @@
                                     <span class="info_text">Couple Problem</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div-->
                     </div>
-                    <div class="btn_wrap pb-0">
+                    <!--div class="btn_wrap pb-0">
                         <a class="btn btn-primary" href="about.html">
                             <span class="btn_text" data-text="Learn More">
                                 Learn More
@@ -75,7 +74,7 @@
                                 <i class="fa-solid fa-arrow-up-right"></i>
                             </span>
                         </a>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>

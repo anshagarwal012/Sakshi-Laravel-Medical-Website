@@ -47,8 +47,8 @@
                     </div>
                     <div class="btn_wrap pb-0 text-center">
                         <button type="submit" class="btn btn-primary">
-                            <span class="btn_text" data-text="Get A Consultation">
-                                Get A Consultation
+                            <span class="btn_text" data-text="Book Appointment">
+                                Book Appointment
                             </span>
                             <span class="btn_icon">
                                 <i class="fa-solid fa-arrow-up-right"></i>
@@ -58,12 +58,10 @@
                 </div>
             </div>
             <div class="decoration_item shape_leaf_1">
-                <img src="assets/images/shapes/shape_leaf_right_top.svg"
-                    alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+                <img src="assets/images/shapes/shape_leaf_right_top.svg" alt="Handle with Ease">
             </div>
             <div class="decoration_item shape_leaf_2">
-                <img src="assets/images/shapes/shape_leaf_left_bottom.svg"
-                    alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+                <img src="assets/images/shapes/shape_leaf_left_bottom.svg" alt="Handle with Ease">
             </div>
         </div>
     </div>

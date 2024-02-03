@@ -11,8 +11,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_brain.svg"
-                            alt="Brain Icon - Talking Minds – Psychotherapist Site Template">
+                        <img src="assets/images/icons/icon_brain.svg" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Physiotherapy</h3>
@@ -20,7 +19,7 @@
                             Physiotherapy, also known as physical therapy, is a healthcare profession focused on
                             assessing, diagnosing, and treating musculoskeletal and neurological conditions. .
                         </p>
-                        <a class="btn-link" href="service_details.html">
+                        <a class="btn-link" href="/Our_Service">
                             <span class="btn_text">More Info</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
@@ -30,8 +29,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_head_double.svg"
-                            alt="Head Double Icon - Talking Minds – Psychotherapist Site Template">
+                        <img src="assets/images/icons/icon_head_double.svg" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Occupational therapy</h3>
@@ -39,7 +37,7 @@
                             Occupational therapy empowers individuals to achieve meaningful participation in daily
                             activities. Through personalized interventions, occupational therapists address.
                         </p>
-                        <a class="btn-link" href="service_details.html">
+                        <a class="btn-link" href="/Our_Service">
                             <span class="btn_text">More Info</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
@@ -49,8 +47,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_head.svg"
-                            alt="Brain Icon - Talking Minds – Psychotherapist Site Template">
+                        <img src="assets/images/icons/icon_head.svg" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Speech therapy</h3>
@@ -58,7 +55,7 @@
                             Speech therapy is a specialized field aimed at improving communication and swallowing
                             abilities. Speech therapists assess and treat a range of speech, language, and swallowing
                             disorders.</p>
-                        <a class="btn-link" href="service_details.html">
+                        <a class="btn-link" href="/Our_Service">
                             <span class="btn_text">More Info</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
@@ -68,8 +65,8 @@
         </div>
 
         <div class="btn_wrap pb-0 text-center">
-            <a class="btn btn-primary" href="service.html">
-                <span class="btn_text" data-text="All Programs">
+            <a class="btn btn-primary" href="/Our_Service">
+                <span class="btn_text" data-text="All Programs" href="/Our_Service">
                     All Programs
                 </span>
                 <span class="btn_icon">

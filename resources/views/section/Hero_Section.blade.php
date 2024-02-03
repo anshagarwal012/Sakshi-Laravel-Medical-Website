@@ -15,7 +15,7 @@
                         <li>
                             <a class="btn btn-primary" href="contact.html">
                                 <span class="btn_text" data-text="Get A Consultation">
-                                    Get A Consultation
+                                    Book Appointment
                                 </span>
                                 <span class="btn_icon">
                                     <i class="fa-solid fa-arrow-up-right"></i>
@@ -23,14 +23,14 @@
                             </a>
                         </li>
                         <li>
-                            <a class="btn btn-outline-secondary" href="about.html">
+                            <!--a class="btn btn-outline-secondary" href="about.html">
                                 <span class="btn_text" data-text="Learn More">
                                     Learn More
                                 </span>
                                 <span class="btn_icon">
                                     <i class="fa-solid fa-arrow-up-right"></i>
                                 </span>
-                            </a>
+                            </a-->
                         </li>
                     </ul>
                     <ul class="hero_section_counter unordered_list">

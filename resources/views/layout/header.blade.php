@@ -3,9 +3,8 @@
         <div class="row align-items-center">
             <div class="col-lg-3 col-5">
                 <div class="site_logo">
-                    <a class="site_link" href="{{ url('index.html') }}">
-                        <img src="assets/images/site_logo/company.jpg"
-                            alt="Site Logo – Talking Minds – Psychotherapist Site Template" width="213" height="38">
+                    <a class="site_link">
+                        <img src="assets/images/site_logo/company.jpg" alt="handle With Ease" width="213" height="38">
                     </a>
                 </div>
             </div>
@@ -49,11 +48,11 @@
                         </button>
                     </li>
                     <li>
-                        <a class="btn_hotline">
+                        <a class="btn_hotline" href="/contact">
                             <!--span class="btn_icon">
                                 <i class="fa-solid fa-phone"></i>
                             </span-->
-                            <span class="btn btn-primary btn-sm">Book Appointment</span>
+                            <span class="btn btn-primary btn-sm py-2">Book Appointment</span>
                         </a>
                     </li>
                 </ul>

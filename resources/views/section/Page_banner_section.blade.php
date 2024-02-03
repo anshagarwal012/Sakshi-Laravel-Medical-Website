@@ -6,7 +6,7 @@
             </div>
             <div class="col-lg-6">
                 <ul class="breadcrumb_nav unordered_list justify-content-lg-end justify-content-center">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/home">Home</a></li>
                     <li>About</li>
                 </ul>
             </div>

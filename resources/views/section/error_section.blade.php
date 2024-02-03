@@ -1,12 +1,12 @@
 <section class="error_section decoration_wrapper">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-7 text-center">
+            <div class="col-lg-7 text-center mt-6">
                 <h1>404</h1>
                 <h2>Oops! That Page Can’t be Found</h2>
-                <p>
+                <!--p>
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremqe laudantium.
-                </p>
+                </p-->
                 <div class="btn_wrap pb-0 text-center">
                     <a class="btn btn-primary" href="index.html">
                         <span class="btn_icon me-2 ms-0">
@@ -20,14 +20,6 @@
             </div>
         </div>
     </div>
-
-    <ul class="social_links unordered_list justify-content-center">
-        <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#!"><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a href="#!"><i class="fa-brands fa-whatsapp"></i></a></li>
-    </ul>
-
     <div class="decoration_item shape_leaf_1">
         <img src="assets/images/shapes/shape_leaf_left_bottom.svg"
             alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
