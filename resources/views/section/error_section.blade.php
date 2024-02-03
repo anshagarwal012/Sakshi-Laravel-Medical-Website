@@ -1,7 +1,7 @@
 <section class="error_section decoration_wrapper">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-7 text-center mt-6">
+        <div class="row justify-content-center mt-6">
+            <div class="col-lg-7 text-center">
                 <h1>404</h1>
                 <h2>Oops! That Page Can’t be Found</h2>
                 <!--p>
@@ -21,11 +21,9 @@
         </div>
     </div>
     <div class="decoration_item shape_leaf_1">
-        <img src="assets/images/shapes/shape_leaf_left_bottom.svg"
-            alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+        <img src="assets/images/shapes/shape_leaf_left_bottom.svg" alt="Handle with Ease">
     </div>
     <div class="decoration_item shape_leaf_2">
-        <img src="assets/images/shapes/shape_leaf_right_top.svg"
-            alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+        <img src="assets/images/shapes/shape_leaf_right_top.svg" alt="Handle with Ease">
     </div>
 </section>

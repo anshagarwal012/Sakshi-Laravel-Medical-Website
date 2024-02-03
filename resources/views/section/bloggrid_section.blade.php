@@ -6,9 +6,8 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
-                                    <img src="assets/images/blogs/blog_image_4-min.jpg"
-                                        alt="Talking Minds - The pros and cons of group psychotherapy">
+                                <a class="blog_image_wrap" href="">
+                                    <img src="assets/images/blogs/blog_image_4-min.jpg" alt="Handle with Ease">
                                 </a>
                             </div>
                             <div class="blog_content">
@@ -21,7 +20,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         A guide to maintaining a child's positive mental health
                                     </a>
                                 </h3>
@@ -29,7 +28,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -39,7 +38,7 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
+                                <a class="blog_image_wrap" href="">
                                     <img src="assets/images/blogs/blog_image_5-min.jpg"
                                         alt="Talking Minds - Top seven challenges in counselling children">
                                 </a>
@@ -54,7 +53,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         Effectiveness of psychological treatments for depressive
                                     </a>
                                 </h3>
@@ -62,7 +61,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -72,7 +71,7 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
+                                <a class="blog_image_wrap" href="">
                                     <img src="assets/images/blogs/blog_image_6-min.jpg"
                                         alt="Talking Minds - Actions, types and tips for finding group therapy">
                                 </a>
@@ -87,7 +86,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         Self determination theory in the workplace
                                     </a>
                                 </h3>
@@ -95,7 +94,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -105,9 +104,8 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
-                                    <img src="assets/images/blogs/blog_image_2-min.jpg"
-                                        alt="Talking Minds - The pros and cons of group psychotherapy">
+                                <a class="blog_image_wrap" href="">
+                                    <img src="assets/images/blogs/blog_image_2-min.jpg" alt="Handle with Ease">
                                 </a>
                             </div>
                             <div class="blog_content">
@@ -120,7 +118,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         A guide to maintaining a child's positive mental health
                                     </a>
                                 </h3>
@@ -128,7 +126,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -138,7 +136,7 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
+                                <a class="blog_image_wrap" href="">
                                     <img src="assets/images/blogs/blog_image_7-min.jpg"
                                         alt="Talking Minds - Top seven challenges in counselling children">
                                 </a>
@@ -153,7 +151,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         What is depression and what can I do about it?
                                     </a>
                                 </h3>
@@ -161,7 +159,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -171,7 +169,7 @@
                     <div class="col-md-6">
                         <div class="blog_item">
                             <div class="blog_image">
-                                <a class="blog_image_wrap" href="blog_details.html">
+                                <a class="blog_image_wrap" href="">
                                     <img src="assets/images/blogs/blog_image_8-min.jpg"
                                         alt="Talking Minds - Actions, types and tips for finding group therapy">
                                 </a>
@@ -186,7 +184,7 @@
                                     <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
-                                    <a href="blog_details.html">
+                                    <a href="">
                                         Benefits of learning and practicing meditation
                                     </a>
                                 </h3>
@@ -194,7 +192,7 @@
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
                                     similique culpa qui officia deserunt.
                                 </p>
-                                <a class="btn-link" href="blog_details.html">
+                                <a class="btn-link" href="">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
@@ -281,14 +279,14 @@
                             <li>
                                 <div class="blog_item_small">
                                     <div class="blog_image">
-                                        <a class="blog_image_wrap" href="blog_details.html">
+                                        <a class="blog_image_wrap" href="">
                                             <img src="assets/images/blogs/small_blog_image_1.jpg"
                                                 alt="Talking Minds - Psychotherapist Site Template">
                                         </a>
                                     </div>
                                     <div class="blog_content">
                                         <h3 class="item_title">
-                                            <a href="blog_details.html">
+                                            <a href="">
                                                 The Importance of Parent Involvement
                                             </a>
                                         </h3>
@@ -303,14 +301,14 @@
                             <li>
                                 <div class="blog_item_small">
                                     <div class="blog_image">
-                                        <a class="blog_image_wrap" href="blog_details.html">
+                                        <a class="blog_image_wrap" href="">
                                             <img src="assets/images/blogs/small_blog_image_2.jpg"
                                                 alt="Talking Minds - Psychotherapist Site Template">
                                         </a>
                                     </div>
                                     <div class="blog_content">
                                         <h3 class="item_title">
-                                            <a href="blog_details.html">
+                                            <a href="">
                                                 Proven techniques to improve memory and remember more
                                             </a>
                                         </h3>
@@ -325,14 +323,14 @@
                             <li>
                                 <div class="blog_item_small">
                                     <div class="blog_image">
-                                        <a class="blog_image_wrap" href="blog_details.html">
+                                        <a class="blog_image_wrap" href="">
                                             <img src="assets/images/blogs/small_blog_image_3.jpg"
                                                 alt="Talking Minds - Psychotherapist Site Template">
                                         </a>
                                     </div>
                                     <div class="blog_content">
                                         <h3 class="item_title">
-                                            <a href="blog_details.html">
+                                            <a href="">
                                                 Establish healthy boundaries at work
                                             </a>
                                         </h3>

@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <h1 class="page_title mb-0">About</h1>
+                <h1 class="page_title mb-0">{{ $page }}</h1>
             </div>
             <div class="col-lg-6">
                 <ul class="breadcrumb_nav unordered_list justify-content-lg-end justify-content-center">
                     <li><a href="/home">Home</a></li>
-                    <li>About</li>
+                    <li>{{ $page }}</li>
                 </ul>
             </div>
         </div>

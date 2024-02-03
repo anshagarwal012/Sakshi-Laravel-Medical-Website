@@ -48,7 +48,7 @@
                 </div>
                 <div class="btn_wrap pb-0">
                     <button type="submit" class="btn btn-primary">
-                        <span class="btn_text" data-text="Get A Consultation">
+                        <span class="btn_text" data-text="Book Appointment">
                             Book Appointment
                         </span>
                         <span class="btn_icon">

@@ -3,8 +3,7 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget ps-lg-4">
-                    <img src="assets/images/about/about_image_10-min.jpg"
-                        alt="About Image - Talking Minds – Psychotherapist Site Template">
+                    <img src="assets/images/about/about_image_10-min.jpg" alt="Handle with Ease">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -73,7 +72,7 @@
                         </div>
                     </div>
                     <div class="btn_wrap pb-0">
-                        <a class="btn btn-primary" href="contact.html">
+                        <a class="btn btn-primary" href="">
                             <span class="btn_text" data-text="Get A Consultation">
                                 Get A Consultation
                             </span>

@@ -39,8 +39,8 @@
                                 <textarea id="input_message" class="form-control" name="comment" placeholder="Your message"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">
-                                <span class="btn_text" data-text="Get A Consultation">
-                                    Get A Consultation
+                                <span class="btn_text" data-text="Contact Us">
+                                    Contact Us
                                 </span>
                                 <span class="btn_icon">
                                     <i class="fa-solid fa-arrow-up-right"></i>

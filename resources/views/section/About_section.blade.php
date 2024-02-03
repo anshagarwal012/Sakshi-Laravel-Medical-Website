@@ -66,8 +66,8 @@
                             </ul>
                         </div-->
                     </div>
-                    <div class="btn_wrap pb-0">
-                        <a class="btn btn-primary" href="about.html">
+                    <!--div class="btn_wrap pb-0">
+                        <a class="btn btn-primary" href="">
                             <span class="btn_text" data-text="Learn More">
                                 Learn More
                             </span>
@@ -75,7 +75,7 @@
                                 <i class="fa-solid fa-arrow-up-right"></i>
                             </span>
                         </a>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
