@@ -5,13 +5,12 @@
                 <div class="row justify-content-lg-between">
                     <div class="col-lg-6">
                         <h2 class="section_heading_text mb-0">
-                            Take care of your mental health now
+                            Take care of your health now
                         </h2>
                     </div>
                     <div class="col-lg-6">
                         <p class="section_heading_description mb-0 ps-lg-4">
-                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                            embarrassing hidden
+                            We are available to help you So contact us now
                         </p>
                     </div>
                 </div>

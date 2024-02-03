@@ -3,7 +3,7 @@
         <div class="section_heading text-center">
             <h2 class="section_heading_text">What Patients Say</h2>
             <p class="section_heading_description mb-0">
-
+                Customers Review And Response
             </p>
         </div>
 
