@@ -3,8 +3,7 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget">
-                    <img src="assets/images/about/g_1.jpg"
-                        alt="About Image - Talking Minds – Psychotherapist Site Template">
+                    <img src="assets/images/about/g_1.jpg" alt="Handle With Ease">
                     <div class="image_shape bg_primary_light"></div>
                     <div class="about_video_icon">
                         <!--a class="video_play_btn popup_video" href="">
@@ -31,7 +30,7 @@
                             <ul class="info_list unordered_list_block">
                                 <li>
                                     <span class="info_icon">
-                                        <i class="fa-light fa-circle-check"></i>
+                                        <i href=""></i>
                                     </span>
                                     <span class="info_text">Physiotherapy</span>
                                 </li>

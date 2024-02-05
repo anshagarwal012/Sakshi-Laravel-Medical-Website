@@ -11,7 +11,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_brain.svg" alt="Handle with Ease">
+                        <img src="assets/images/service_logo/Asset 3.png" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Physiotherapy</h3>
@@ -29,7 +29,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_head_double.svg" alt="Handle with Ease">
+                        <img src="assets/images/service_logo/Asset 2.png" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Occupational therapy</h3>
@@ -47,7 +47,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="service_item">
                     <div class="item_icon">
-                        <img src="assets/images/icons/icon_head.svg" alt="Handle with Ease">
+                        <img src="assets/images/service_logo/Asset 1.png" alt="Handle with Ease">
                     </div>
                     <div class="item_contact">
                         <h3 class="item_title">Speech therapy</h3>
