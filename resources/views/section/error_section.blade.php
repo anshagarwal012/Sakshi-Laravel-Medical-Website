@@ -8,7 +8,7 @@
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusant doloremqe laudantium.
                 </p-->
                 <div class="btn_wrap pb-0 text-center">
-                    <a class="btn btn-primary" href="index.html">
+                    <a class="btn btn-primary" href="/">
                         <span class="btn_icon me-2 ms-0">
                             <i class="fa-solid fa-arrow-up-left"></i>
                         </span>

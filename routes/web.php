@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Routing;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +15,5 @@ use App\Http\Controllers\Routing;
 
 Route::get('/', [App\Http\Controllers\Routing::class, 'root']);
 Route::get('{any}', [App\Http\Controllers\Routing::class, 'index']);
+Route::get('admin/{page}', [App\Http\Controllers\Backend::class, 'index']);
+Route::post('admin/{page}', [App\Http\Controllers\Backend::class, 'post_']);

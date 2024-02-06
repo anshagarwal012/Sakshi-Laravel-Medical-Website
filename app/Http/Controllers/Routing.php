@@ -20,6 +20,7 @@ class Routing extends Controller
     #dynamic routing
     public function index(Request $request)
     {
+        if($request->path() == 'admin') return redirect('admin/login');
         if (view()->exists($request->path())) {
             $data = [];
             switch ($request->path()) {

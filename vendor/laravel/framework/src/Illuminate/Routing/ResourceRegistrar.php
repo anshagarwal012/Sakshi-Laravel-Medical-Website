@@ -613,7 +613,7 @@ class ResourceRegistrar
     {
         $name = $this->getResourceRouteName($resource, $method, $options);
 
-        $action = ['as' => $name, 'uses' => $controller.'@'.$method];
+        $action = ['as' => $name, 'uses' => $controller[0].'@'.$method];
 
         if (isset($options['middleware'])) {
             $action['middleware'] = $options['middleware'];
