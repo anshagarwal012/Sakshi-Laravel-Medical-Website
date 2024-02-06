@@ -13,7 +13,7 @@
                     </p>
                     <ul class="btns_group unordered_list">
                         <li>
-                            <a class="btn btn-primary" href="contact.html">
+                            <a class="btn btn-primary" href="/contact">
                                 <span class="btn_text" data-text="Get A Consultation">
                                     Book Appointment
                                 </span>

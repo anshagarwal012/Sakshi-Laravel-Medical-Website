@@ -30,7 +30,7 @@
                             <ul class="info_list unordered_list_block">
                                 <li>
                                     <span class="info_icon">
-                                        <i href=""></i>
+                                        <i class="fa-light fa-circle-check"></i>
                                     </span>
                                     <span class="info_text">Physiotherapy</span>
                                 </li>
