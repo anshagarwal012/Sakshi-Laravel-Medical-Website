@@ -10,6 +10,11 @@
     <body>
     @endsection
     @section('content')
+        @if (session('message'))
+            <script>
+                alert('{{ session('message') }}')
+            </script>
+        @endif
         <div class="authentication-bg min-vh-100">
             <div class="bg-overlay bg-light"></div>
             <div class="container">
