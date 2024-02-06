@@ -59,8 +59,10 @@
                                             <i class="fa-solid fa-phone"></i>
                                         </div>
                                         <div class="item_content">
-                                            <h3 class="item_title">Phone Number</h3>
-                                            <p class="item_info mb-0">+918299626136</p>
+                                            <a href="tel://+918299626136">
+                                                <h3 class="item_title">Phone Number</h3>
+                                                <p class="item_info mb-0">+918299626136</p>
+                                            </a>
                                         </div>
                                     </li>
                                 </ul>
@@ -72,8 +74,10 @@
                                             <i class="fa-solid fa-envelope"></i>
                                         </div>
                                         <div class="item_content">
-                                            <h3 class="item_title">Email</h3>
-                                            <p class="item_info mb-0">info@handlewithease.com</p>
+                                            <a href="mailto:info@handlewithease.com">
+                                                <h3 class="item_title">Email</h3>
+                                                <p class="item_info mb-0">info@handlewithease.com</p>
+                                            </a>
                                         </div>
                                     </li>
                                 </ul>

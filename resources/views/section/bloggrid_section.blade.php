@@ -16,176 +16,10 @@
                                 </ul>
                                 <ul class="post_meta unordered_list">
                                     <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
                                 </ul>
                                 <h3 class="item_title">
                                     <a href="">
                                         A guide to maintaining a child's positive mental health
-                                    </a>
-                                </h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
-                                    similique culpa qui officia deserunt.
-                                </p>
-                                <a class="btn-link" href="">
-                                    <span class="btn_text">Read More</span>
-                                    <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap" href="">
-                                    <img src="assets/images/blogs/blog_image_5-min.jpg"
-                                        alt="Talking Minds - Top seven challenges in counselling children">
-                                </a>
-                            </div>
-                            <div class="blog_content">
-                                <ul class="post_category unordered_list">
-                                    <li><a href="#!">Family Problem</a></li>
-                                </ul>
-                                <ul class="post_meta unordered_list">
-                                    <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
-                                </ul>
-                                <h3 class="item_title">
-                                    <a href="">
-                                        Effectiveness of psychological treatments for depressive
-                                    </a>
-                                </h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
-                                    similique culpa qui officia deserunt.
-                                </p>
-                                <a class="btn-link" href="">
-                                    <span class="btn_text">Read More</span>
-                                    <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap" href="">
-                                    <img src="assets/images/blogs/blog_image_6-min.jpg"
-                                        alt="Talking Minds - Actions, types and tips for finding group therapy">
-                                </a>
-                            </div>
-                            <div class="blog_content">
-                                <ul class="post_category unordered_list">
-                                    <li><a href="#!">Family Problem</a></li>
-                                </ul>
-                                <ul class="post_meta unordered_list">
-                                    <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
-                                </ul>
-                                <h3 class="item_title">
-                                    <a href="">
-                                        Self determination theory in the workplace
-                                    </a>
-                                </h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
-                                    similique culpa qui officia deserunt.
-                                </p>
-                                <a class="btn-link" href="">
-                                    <span class="btn_text">Read More</span>
-                                    <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap" href="">
-                                    <img src="assets/images/blogs/blog_image_2-min.jpg" alt="Handle with Ease">
-                                </a>
-                            </div>
-                            <div class="blog_content">
-                                <ul class="post_category unordered_list">
-                                    <li><a href="#!">Family Problem</a></li>
-                                </ul>
-                                <ul class="post_meta unordered_list">
-                                    <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
-                                </ul>
-                                <h3 class="item_title">
-                                    <a href="">
-                                        A guide to maintaining a child's positive mental health
-                                    </a>
-                                </h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
-                                    similique culpa qui officia deserunt.
-                                </p>
-                                <a class="btn-link" href="">
-                                    <span class="btn_text">Read More</span>
-                                    <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap" href="">
-                                    <img src="assets/images/blogs/blog_image_7-min.jpg"
-                                        alt="Talking Minds - Top seven challenges in counselling children">
-                                </a>
-                            </div>
-                            <div class="blog_content">
-                                <ul class="post_category unordered_list">
-                                    <li><a href="#!">Family Problem</a></li>
-                                </ul>
-                                <ul class="post_meta unordered_list">
-                                    <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
-                                </ul>
-                                <h3 class="item_title">
-                                    <a href="">
-                                        What is depression and what can I do about it?
-                                    </a>
-                                </h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Sunt in
-                                    similique culpa qui officia deserunt.
-                                </p>
-                                <a class="btn-link" href="">
-                                    <span class="btn_text">Read More</span>
-                                    <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap" href="">
-                                    <img src="assets/images/blogs/blog_image_8-min.jpg"
-                                        alt="Talking Minds - Actions, types and tips for finding group therapy">
-                                </a>
-                            </div>
-                            <div class="blog_content">
-                                <ul class="post_category unordered_list">
-                                    <li><a href="#!">Family Problem</a></li>
-                                </ul>
-                                <ul class="post_meta unordered_list">
-                                    <li>26 July 2023</li>
-                                    <li><a href="#!">120 Views</a></li>
-                                    <li><a href="#!">1 Comments</a></li>
-                                </ul>
-                                <h3 class="item_title">
-                                    <a href="">
-                                        Benefits of learning and practicing meditation
                                     </a>
                                 </h3>
                                 <p>
@@ -235,36 +69,6 @@
                                     <span class="category_counter">12</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#!">
-                                    <span class="category_name">Family Problem</span>
-                                    <span class="category_counter">23</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <span class="category_name">Couple Problem</span>
-                                    <span class="category_counter">36</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <span class="category_name">Parenting</span>
-                                    <span class="category_counter">16</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <span class="category_name">Depression</span>
-                                    <span class="category_counter">17</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <span class="category_name">Business problems</span>
-                                    <span class="category_counter">21</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <div class="sidebar_widget">
@@ -292,74 +96,10 @@
                                         </h3>
                                         <ul class="post_meta unordered_list">
                                             <li>26 July 2023</li>
-                                            <li><a href="#!">120 Views</a></li>
-                                            <li><a href="#!">1 Comments</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="blog_item_small">
-                                    <div class="blog_image">
-                                        <a class="blog_image_wrap" href="">
-                                            <img src="assets/images/blogs/small_blog_image_2.jpg"
-                                                alt="Talking Minds - Psychotherapist Site Template">
-                                        </a>
-                                    </div>
-                                    <div class="blog_content">
-                                        <h3 class="item_title">
-                                            <a href="">
-                                                Proven techniques to improve memory and remember more
-                                            </a>
-                                        </h3>
-                                        <ul class="post_meta unordered_list">
-                                            <li>26 July 2023</li>
-                                            <li><a href="#!">120 Views</a></li>
-                                            <li><a href="#!">1 Comments</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="blog_item_small">
-                                    <div class="blog_image">
-                                        <a class="blog_image_wrap" href="">
-                                            <img src="assets/images/blogs/small_blog_image_3.jpg"
-                                                alt="Talking Minds - Psychotherapist Site Template">
-                                        </a>
-                                    </div>
-                                    <div class="blog_content">
-                                        <h3 class="item_title">
-                                            <a href="">
-                                                Establish healthy boundaries at work
-                                            </a>
-                                        </h3>
-                                        <ul class="post_meta unordered_list">
-                                            <li>26 July 2023</li>
-                                            <li><a href="#!">120 Views</a></li>
-                                            <li><a href="#!">1 Comments</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar_widget">
-                        <h3 class="sidebar_widget_title">
-                            <span class="title_icon">
-                                <img src="assets/images/site_logo/favourite_icon.svg"
-                                    alt="Talking Minds - Psychotherapist Site Template">
-                            </span>
-                            <span class="title_text">Popular Tags</span>
-                        </h3>
-                        <ul class="post_tags unordered_list">
-                            <li><a href="#!">Family Problem</a></li>
-                            <li><a href="#!">Therapy</a></li>
-                            <li><a href="#!">Teenagers</a></li>
-                            <li><a href="#!">Depression</a></li>
-                            <li><a href="#!">Life Balance</a></li>
-                            <li><a href="#!">Work</a></li>
-                            <li><a href="#!">Couple Problem</a></li>
                         </ul>
                     </div>
                 </aside>

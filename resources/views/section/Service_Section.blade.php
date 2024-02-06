@@ -22,6 +22,7 @@
                 </div>
             @endforeach
         </div>
+        @if ($services_button)
         <div class="btn_wrap pb-0 text-center">
             <a class="btn btn-primary" href="/Our_Service">
                 <span class="btn_text" data-text="All Services" href="/Our_Service">
@@ -32,5 +33,6 @@
                 </span>
             </a>
         </div>
+        @endif
     </div>
 </section>

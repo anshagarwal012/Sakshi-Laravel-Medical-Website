@@ -34,7 +34,7 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="work_process_item">
                             <div class="serial_number">02</div>
-                            <h3 class="item_title">Timing</h3>
+                            <h3 class="item_title">Choose Time</h3>
                             <!--p class="mb-0">
                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             </p-->

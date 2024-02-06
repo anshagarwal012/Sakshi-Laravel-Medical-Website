@@ -19,10 +19,7 @@
                             <mark>Dr.Sakshi Chaurasia</mark> — Licensed Mental Health Counselor, Psychotherapist
                         </h2>
                         <p class="section_heading_description mb-0 ">
-                            Dr. Sakshi, a prominent figure in neurological and pediatric physiotherapy, is devoted to
-                            revolutionizing lives through individualized attention. With an unwavering dedication to
-                            patient welfare, she spearheads our team, delivering customized remedies for people across
-                            all age groups..
+                            Dr. Sakshi chaurasia, A leading expert  in neurological and pediatric physiotherapy, Dr. Sakshi is dedicated to transforming lives through personalized care .with a profound commitment to patient well -being, Dr. Sakshi leads Our team in providing tailored solutions for individuals of all ages.
                         </p>
                     </div>
                     <div class="row">
