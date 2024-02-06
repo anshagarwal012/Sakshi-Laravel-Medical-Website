@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
 
     <!-- include head css -->
-    @include('layouts.head-css')
+    @include('admin.layouts.head-css')
 </head>
 
 @yield('body')
@@ -19,14 +19,14 @@
 <!-- Begin page -->
 <div id="layout-wrapper">
     <!-- topbar -->
-    @include('layouts.topbar')
+    @include('admin.layouts.topbar')
 
     <!-- sidebar components -->
-    @include('layouts.sidebar')
+    @include('admin.layouts.sidebar')
     @if (app('request')->getPathInfo() == '/dashboard' || app('request')->getPathInfo() == '/feedback')
-        @include('layouts.dashboard_header')
+        @include('admin.layouts.dashboard_header')
     @else
-        @include('layouts.horizontal')
+        @include('admin.layouts.horizontal')
     @endif
 
     <!-- ============================================================== -->
@@ -43,7 +43,7 @@
         <!-- End Page-content -->
 
         <!-- footer -->
-        @include('layouts.footer')
+        @include('admin.layouts.footer')
 
     </div>
     <!-- end main content-->
@@ -54,7 +54,7 @@
 {{-- @include('layouts.right-sidebar') --}}
 
 <!-- vendor-scripts -->
-@include('layouts.vendor-scripts')
+@include('admin.layouts.vendor-scripts')
 
 </body>
 
