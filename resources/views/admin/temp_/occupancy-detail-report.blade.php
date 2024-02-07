@@ -2,10 +2,7 @@
 @section('title')
     Occupancy Details Report
 @endsection
-@section('css')
-    <!-- plugin css -->
-    <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
+
 @section('page-title')
     Occupancy Details Report
 @endsection

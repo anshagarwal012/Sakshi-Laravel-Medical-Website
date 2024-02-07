@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Services;
 
 class Routing extends Controller
 {
@@ -45,11 +46,13 @@ class Routing extends Controller
         }
     }
     public function services($limit = 0){
-        return [
-            ['image' => 'assets/images/service_logo/Asset 3.png', 'title' => 'Physiotherapy', 'desc' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions.', 'url' => '/Our_Service',],
-            ['image' => 'assets/images/service_logo/Asset 2.png', 'title' => 'Occupational Therapy', 'desc' => 'Occupational therapy empowers individuals to achieve meaningful participation in daily activities. Through personalized interventions, occupational therapists address.', 'url' => '/Our_Service',],
-            ['image' => 'assets/images/service_logo/Asset 1.png', 'title' => 'Speech Therapy', 'desc' => ' Speech therapy is a specialized field aimed at improving communication and swallowing abilities. Speech therapists assess and treat a range of speech, language, and swallowing disorders.', 'url' => '/Our_Service',]
-        ];
+        return Services::get();
+
+        //  [
+        //     ['image' => 'assets/images/service_logo/Asset 3.png', 'title' => 'Physiotherapy', 'desc' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions.', 'url' => '/Our_Service',],
+        //     ['image' => 'assets/images/service_logo/Asset 2.png', 'title' => 'Occupational Therapy', 'desc' => 'Occupational therapy empowers individuals to achieve meaningful participation in daily activities. Through personalized interventions, occupational therapists address.', 'url' => '/Our_Service',],
+        //     ['image' => 'assets/images/service_logo/Asset 1.png', 'title' => 'Speech Therapy', 'desc' => ' Speech therapy is a specialized field aimed at improving communication and swallowing abilities. Speech therapists assess and treat a range of speech, language, and swallowing disorders.', 'url' => '/Our_Service',]
+        // ];
     }
     public function gallery($limit = 0) {
         return [

@@ -1,13 +1,10 @@
 @extends('layouts.master')
 @section('title')
-    Shelter Home Details Report
+    {{ucwords(str_replace('-',' ',(request()->segment(2))))}}
 @endsection
-@section('css')
-    <!-- plugin css -->
-    <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
+
 @section('page-title')
-    Shelter Home Details Report
+    {{ucwords(str_replace('-',' ',(request()->segment(2))))}}
 @endsection
 @section('body')
     {{-- @php --}}

@@ -12,7 +12,7 @@
                         </div>
                         <div class="item_contact">
                             <h3 class="item_title">{{$dataItem['title']}}</h3>
-                            <p>{{$dataItem['desc']}}</p>
+                            <p>{{$dataItem['description']}}</p>
                             <a class="btn-link" href="{{$dataItem['url']}}">
                                 <span class="btn_text">More Info</span>
                                 <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>

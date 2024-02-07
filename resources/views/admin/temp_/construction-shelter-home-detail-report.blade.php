@@ -1,13 +1,10 @@
 @extends('layouts.master')
 @section('title')
-    Construction Shelter Home Details Reports
+    Construction {{ucwords(str_replace('-',' ',(request()->segment(2))))}}s
 @endsection
-@section('css')
-    <!-- plugin css -->
-    <link href="{{ URL::asset('build/libs/jsvectormap/css/jsvectormap.min.css') }}" rel="stylesheet" type="text/css" />
-@endsection
+
 @section('page-title')
-    Construction Shelter Home Details Reports
+    Construction {{ucwords(str_replace('-',' ',(request()->segment(2))))}}s
 @endsection
 @section('body')
 
@@ -19,7 +16,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title text-center text-primary m-0">Construction Shelter Home Details Reports</h3>
+                        <h3 class="card-title text-center text-primary m-0">Construction {{ucwords(str_replace('-',' ',(request()->segment(2))))}}s</h3>
                     </div>
                     @if (session('success'))
                         <script>

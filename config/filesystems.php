@@ -56,6 +56,13 @@ return [
             'throw' => false,
         ],
 
+        'uploads' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/uploads'), // The directory where files will be stored
+            'url' => env('APP_URL').'/storage/uploads', // URL to access the files
+            'visibility' => 'public', // Visibility of the files
+        ],
+
     ],
 
     /*
