@@ -19,15 +19,7 @@
 <!-- Begin page -->
 <div id="layout-wrapper">
     <!-- topbar -->
-    @include('admin.layouts.topbar')
-
-    <!-- sidebar components -->
-    @include('admin.layouts.sidebar')
-    @if (app('request')->getPathInfo() == '/dashboard' || app('request')->getPathInfo() == '/feedback')
-        @include('admin.layouts.dashboard_header')
-    @else
-        @include('admin.layouts.horizontal')
-    @endif
+    @include('admin.layouts.horizontal')
 
     <!-- ============================================================== -->
     <!-- Start right Content here -->

@@ -23,7 +23,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title text-center text-primary m-0">Shelter Home Details Report</h3>
+                        <h3 class="card-title text-center text-primary m-0"></h3>
                     </div>
                     <div class="card-body">
                     </div>
