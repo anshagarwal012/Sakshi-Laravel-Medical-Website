@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Models\Category;
 use App\Models\Services;
+use App\Models\Faqs;
+use App\Models\Blogs;
+use App\Models\Contactus;
+use App\Models\Gallery;
+use App\Models\Reviews;
 
 class Backend extends Controller
 {
@@ -31,8 +36,26 @@ class Backend extends Controller
                     case 'admin/category':
                         $data = Category::get();
                         break;
+                    case 'admin/faqs':
+                        $data = Faqs::get();
+                        break;
                     case 'admin/services':
                         $data = Services::get();
+                        break;
+                    case 'admin/add-blog':
+                        $data['category'] = Category::get();
+                        break;
+                    case 'admin/blogs':
+                        $data = Blogs::with('category')->get();
+                        break;
+                    case 'admin/review':
+                        $data = Reviews::get();
+                        break;
+                    case 'admin/gallery':
+                        $data = Gallery::get();
+                        break;
+                    case 'admin/contact':
+                        $data = Contactus::get();
                         break;
                 }
                 return view($request->path(), ['data' => $data]);
@@ -64,6 +87,24 @@ class Backend extends Controller
                     }
                     return redirect()->back()->with('messages', "Please Try Again");
                     break;
+                case 'admin/faqs':
+                    $d = Faqs::create($request->all());
+                    if ($d) {
+                        return redirect()->back()->with('messages', "FAQs Inserted Successfully");
+                    }
+                    return redirect()->back()->with('messages', "Please Try Again");
+                    break;
+                case 'admin/add-blog':
+                    $data = $request->all();
+                    $file = $request->file('image');
+                    $fileName = time() . '_' . $file->getClientOriginalName();
+                    $data['image'] = $fileName;
+                    $d = Blogs::create($data);
+                    if ($d) {
+                        return redirect()->back()->with('messages', "Blogs Inserted Successfully");
+                    }
+                    return redirect()->back()->with('messages', "Please Try Again");
+                    break;
                 case 'admin/services':
                     $data = $request->all();
                     $file = $request->file('image');
@@ -72,6 +113,24 @@ class Backend extends Controller
                     $data['image'] = $fileName;
                     Services::create($data);
                     return redirect()->back()->with('messages', "Services Inserted Successfully");
+                    break;
+                case 'admin/review':
+                    $data = $request->all();
+                    $file = $request->file('path');
+                    $fileName = time() . '_' . $file->getClientOriginalName();
+                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                    $data['path'] = $fileName;
+                    Reviews::create($data);
+                    return redirect()->back()->with('messages', "Reviews Inserted Successfully");
+                    break;
+                case 'admin/gallery':
+                    $data = $request->all();
+                    $file = $request->file('images');
+                    $fileName = time() . '_' . $file->getClientOriginalName();
+                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                    $data['images'] = $fileName;
+                    Gallery::create($data);
+                    return redirect()->back()->with('messages', "Gallery Inserted Successfully");
                     break;
             }
             return view($request->path(), ['data' => $data]);
@@ -82,13 +141,23 @@ class Backend extends Controller
 
     public function delete_(Request $request)
     {
-        $data = [];
         switch ($request->path()) {
+            case 'admin/services':
+                Services::where('id', $request->id)->delete();
             case 'admin/category':
                 Category::where('id', $request->id)->delete();
-                return back()->with('messages', "Date Deleted successfully");
+            case 'admin/faqs':
+                Faqs::where('id', $request->id)->delete();
+            case 'admin/blogs':
+                Blogs::where('id', $request->id)->delete();
+            case 'admin/review':
+                Reviews::where('id', $request->id)->delete();
+            case 'admin/gallery':
+                Gallery::where('id', $request->id)->delete();
+            case 'admin/contact':
+                Contactus::where('id', $request->id)->delete();
         }
-        return view($request->path(), ['data' => $data]);
+        return back()->with('messages', "Date Deleted successfully");
     }
 
     public function wildcards()

@@ -47,9 +47,11 @@
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle arrow-none" href="/admin/blogs" id="topnav-dashboard" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle arrow-none" href="/admin/blogs" id="topnav-dashboard"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bx bx-plus-medical icon nav-icon"></i>
-                                <span data-key="t-dashboards">Blogs</span> <div class="arrow-down"></div>
+                                <span data-key="t-dashboards">Blogs</span>
+                                <div class="arrow-down"></div>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="topnav-dashboard">
                                 <a href="/admin/blogs" class="dropdown-item" data-key="t-ecommerce">All Blogs</a>
@@ -57,26 +59,16 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle arrow-none" href="/admin/gallery" id="topnav-dashboard" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-photo-album icon nav-icon"></i>
-                                <span data-key="t-dashboards">Gallery</span> <div class="arrow-down"></div>
+                            <a class="nav-link" href="/admin/review" id="topnav-dashboard" role="button">
+                                <i class="bx bx-user icon nav-icon"></i>
+                                <span data-key="t-dashboards">Reviews</span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="topnav-dashboard">
-                                <a href="/admin/gallery" class="dropdown-item" data-key="t-ecommerce">All Gallery</a>
-                                <a href="/admin/photo-gallery" class="dropdown-item" data-key="t-ecommerce">Photo Gallery</a>
-                                <a href="/admin/video-gallery" class="dropdown-item" data-key="t-sales">Video Gallery</a>
-                            </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle arrow-none" href="/admin/review" id="topnav-dashboard" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bx bx-user icon nav-icon"></i>
-                                <span data-key="t-dashboards">Reviews</span> <div class="arrow-down"></div>
+                            <a class="nav-link" href="/admin/gallery" id="topnav-dashboard" role="button">
+                                <i class="bx bxs-photo-album icon nav-icon"></i>
+                                <span data-key="t-dashboards">Gallery</span>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="topnav-dashboard">
-                                <a href="/admin/review" class="dropdown-item" data-key="t-ecommerce">All Reviews </a>
-                                <a href="/admin/photo-review" class="dropdown-item" data-key="t-ecommerce">Photo Reviews</a>
-                                <a href="/admin/video-review" class="dropdown-item" data-key="t-sales">Video Reviews</a>
-                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="/admin/contact" id="topnav-dashboard" role="button">
