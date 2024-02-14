@@ -173,4 +173,13 @@ class Backend extends Controller
             'admin/logout'
         ];
     }
+    public function contact(Request $request)
+    {
+        $data = $request->all();
+        Contactus::create($data);
+        return [
+            'status' => 1,
+            'message' => 'Thanks for contacting us :)'
+        ];
+    }
 }

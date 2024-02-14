@@ -18,36 +18,40 @@
 
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6 mb-lg-0 mb-4">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="input_name">Name</label>
-                                <input id="input_name" class="form-control" type="text" name="name"
-                                    placeholder="Your name">
+                    <form action="/api/contact" method="POST" class="form-group">
+                        @csrf
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="input_name">Name</label>
+                                    <input id="input_name" class="form-control" type="text" name="Name"
+                                        placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="input_phone">Phone</label>
+                                    <input id="input_phone" class="form-control" type="number" name="PhoneNumber"
+                                        placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group mb-4">
+                                    <label for="input_message">Message</label>
+                                    <textarea id="input_message" class="form-control" name="Message" placeholder="Your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary submit-contact">
+                                    <span class="btn_text" data-text="Contact Us">
+                                        Contact Us
+                                    </span>
+                                    <span class="btn_icon">
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </span>
+                                </button>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="input_phone">Phone</label>
-                                <input id="input_phone" class="form-control" type="tel" name="phone"
-                                    placeholder="Phone number">
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-group mb-4">
-                                <label for="input_message">Message</label>
-                                <textarea id="input_message" class="form-control" name="comment" placeholder="Your message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <span class="btn_text" data-text="Contact Us">
-                                    Contact Us
-                                </span>
-                                <span class="btn_icon">
-                                    <i class="fa-solid fa-arrow-up-right"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
+
+                    </form>
                 </div>
                 <div class="col-lg-6">
                     <div>
@@ -99,3 +103,32 @@
         </div>
     </div>
 </section>
+@section('scripts')
+    <script>
+        $(function() {
+            $('.submit-contact').on('click', function(e) {
+                e.preventDefault();
+                if ($('[name="Name"]').val() != '' && $('[name="PhoneNumber"]').val() != '' && $(
+                        '[name="Message"]').val() != '') {
+                    $d = $('form').serializeArray()
+                    $d = serialize_to_object($d, $)
+                    $.post('/api/contact', $d, function(r) {
+                        alert(r.message)
+                        location.reload()
+                        // console.log(r);
+                    })
+                } else {
+                    alert('Please Fill All The Details');
+                }
+            })
+        })
+
+        function serialize_to_object(formdata, $) {
+            var data = {};
+            $(formdata).each(function(index, obj) {
+                data[obj.name] = obj.value;
+            });
+            return data;
+        }
+    </script>
+@endsection
