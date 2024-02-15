@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget ps-lg-4">
-                    <img src="assets/images/about/about_image_10-min.jpg" alt="Handle with Ease">
+                    <img src="assets\images\hero\phy.jpg" alt="Handle with Ease">
                 </div>
             </div>
             <div class="col-lg-6">
