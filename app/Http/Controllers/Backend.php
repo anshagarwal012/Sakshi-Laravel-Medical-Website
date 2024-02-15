@@ -57,6 +57,14 @@ class Backend extends Controller
                     case 'admin/contact':
                         $data = Contactus::get();
                         break;
+                    case 'admin/dashboard':
+                        $data['Blogs'] = Blogs::count();
+                        $data['Category'] = Category::count();
+                        $data['FAQ'] = Faqs::count();
+                        $data['Services'] = Services::count();
+                        $data['Reviews'] = Reviews::count();
+                        $data['Contact'] = Contactus::count();
+                        break;
                 }
                 return view($request->path(), ['data' => $data]);
             }

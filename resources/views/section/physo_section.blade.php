@@ -8,38 +8,51 @@
                 <h3 class="mb-3">Our Specialties</h3>
                 <p>Discover our diverse specialties, offering personalized care and advanced treatments for optimal
                     health outcomes</p>
-                <div class="row text-center">
+                <div class="row d-flex justify-content-center">
                     <div class="col-md-5 col-sm-6">
-                        <ul class="info_list unordered_list_block">
+                        <ul class="info_list unordered_list_block ">
                             <li>
                                 <span class="info_icon">
                                     <i class="fa-light fa-circle-check"></i>
                                 </span>
-                                <span class="info_text">Physiotherapy</span>
+                                <span class="info_text">Orthopedic Physiotherapy
+                                </span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <i class="fa-light fa-circle-check"></i>
                                 </span>
-                                <span class="info_text">Physiotherapy</span>
+                                <span class="info_text">Neurological Rehabilitation</span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <i class="fa-light fa-circle-check"></i>
                                 </span>
-                                <span class="info_text">Physiotherapy</span>
+                                <span class="info_text">Cardiopulmonary Rehabilitation</span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <i class="fa-light fa-circle-check"></i>
                                 </span>
-                                <span class="info_text">Physiotherapy</span>
+                                <span class="info_text">Pelvic Health Physiotherapy</span>
                             </li>
                             <li>
                                 <span class="info_icon">
                                     <i class="fa-light fa-circle-check"></i>
                                 </span>
-                                <span class="info_text">Physiotherapy</span>
+                                <span class="info_text">Women's Health</span>
+                            </li>
+                            <li>
+                                <span class="info_icon">
+                                    <i class="fa-light fa-circle-check"></i>
+                                </span>
+                                <span class="info_text">Vestibular Rehabilitation</span>
+                            </li>
+                            <li>
+                                <span class="info_icon">
+                                    <i class="fa-light fa-circle-check"></i>
+                                </span>
+                                <span class="info_text">Workplace Ergonomics and Injury Prevention</span>
                             </li>
                         </ul>
                     </div>
