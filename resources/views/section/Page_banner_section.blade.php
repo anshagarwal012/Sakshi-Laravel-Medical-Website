@@ -13,11 +13,11 @@
         </div>
     </div>
     <div class="decoration_item shape_leaf_1">
-        <img src="assets/images/shapes/shape_leaf_left.svg"
+        <img src="/assets/images/shapes/shape_leaf_left.svg"
             alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
     </div>
     <div class="decoration_item shape_leaf_2">
-        <img src="assets/images/shapes/shape_leaf_right.svg"
+        <img src="/assets/images/shapes/shape_leaf_right.svg"
             alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
     </div>
 </section>

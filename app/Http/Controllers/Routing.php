@@ -4,6 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Services;
+use App\Models\Category;
+use App\Models\Faqs;
+use App\Models\Blogs;
+use App\Models\Contactus;
+use App\Models\Gallery;
+use App\Models\Reviews;
+use Illuminate\Support\Facades\DB;
 
 class Routing extends Controller
 {
@@ -12,16 +19,17 @@ class Routing extends Controller
         $data['services'] = $this->services();
         $data['faqs'] = [
             'title' => 'The most popular questions to discuss Physiotherapy',
-            'faqs' => [['question' => 'What is physiotherapy?', 'answer' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions. It involves a range of techniques such as manual therapy, exercise prescription, and modalities like ultrasound and electrical stimulation to promote recovery and improve function.'],['question' => 'What conditions can physiotherapy treat?', 'answer' => 'Physiotherapy can address a wide range of conditions including sports injuries, back and neck pain, arthritis, stroke rehabilitation, neurological disorders, post-surgical recovery, and chronic pain conditions. It is also effective in managing conditions like asthma, incontinence, and workplace injuries.'],['question' => 'What should I expect during a physiotherapy session?', 'answer' => 'During your initial session, the physiotherapist will conduct a thorough assessment to understand your condition, medical history, and goals. They will then develop a personalized treatment plan which may include manual therapy, exercises, education, and modalities as needed. Subsequent sessions will focus on implementing and progressing the treatment plan.'],['question' => 'How many physiotherapy sessions will I need?', 'answer' => 'The number of sessions required varies depending on the nature and severity of your condition, as well as your individual goals. Your physiotherapist will discuss this with you during your initial assessment and regularly review your progress to adjust the treatment plan as needed.'],['question' => 'Is physiotherapy painful?', 'answer' => 'Physiotherapy should not be painful, although you may experience some discomfort during certain exercises or manual therapy techniques. Your physiotherapist will work within your tolerance level and communicate with you to ensure that you are comfortable throughout the session.']],
+            'faqs' => [['question' => 'What is physiotherapy?', 'answer' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions. It involves a range of techniques such as manual therapy, exercise prescription, and modalities like ultrasound and electrical stimulation to promote recovery and improve function.'], ['question' => 'What conditions can physiotherapy treat?', 'answer' => 'Physiotherapy can address a wide range of conditions including sports injuries, back and neck pain, arthritis, stroke rehabilitation, neurological disorders, post-surgical recovery, and chronic pain conditions. It is also effective in managing conditions like asthma, incontinence, and workplace injuries.'], ['question' => 'What should I expect during a physiotherapy session?', 'answer' => 'During your initial session, the physiotherapist will conduct a thorough assessment to understand your condition, medical history, and goals. They will then develop a personalized treatment plan which may include manual therapy, exercises, education, and modalities as needed. Subsequent sessions will focus on implementing and progressing the treatment plan.'], ['question' => 'How many physiotherapy sessions will I need?', 'answer' => 'The number of sessions required varies depending on the nature and severity of your condition, as well as your individual goals. Your physiotherapist will discuss this with you during your initial assessment and regularly review your progress to adjust the treatment plan as needed.'], ['question' => 'Is physiotherapy painful?', 'answer' => 'Physiotherapy should not be painful, although you may experience some discomfort during certain exercises or manual therapy techniques. Your physiotherapist will work within your tolerance level and communicate with you to ensure that you are comfortable throughout the session.']],
         ];
         $data['testimonials'] = $this->testimonials();
+        $data['blogs'] = $this->blogs(3);
 
         return view('home', ['data' => $data]);
     }
     #dynamic routing
     public function index(Request $request)
     {
-        if($request->path() == 'admin') return redirect('admin/login');
+        if ($request->path() == 'admin') return redirect('admin/login');
         if (view()->exists($request->path())) {
             $data = [];
             switch ($request->path()) {
@@ -39,24 +47,46 @@ class Routing extends Controller
                 case 'review':
                     $data['testimonials'] = $this->testimonials();
                     break;
+                case 'blogs':
+                    $data['blogs'] = $this->blogs();
+                    $data['blogs'] = $this->recommended();
+                    $data['Category'] = $this->Category();
+                    break;
             }
-            return view($request->path(), ['data'=>$data]);
+            return view($request->path(), ['data' => $data]);
         } else {
             return view('404');
         }
     }
-    public function services($limit = 0){
-        return Services::get();
 
-        //  [
-        //     ['image' => 'assets/images/service_logo/Asset 3.png', 'title' => 'Physiotherapy', 'desc' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions.', 'url' => '/Our_Service',],
-        //     ['image' => 'assets/images/service_logo/Asset 2.png', 'title' => 'Occupational Therapy', 'desc' => 'Occupational therapy empowers individuals to achieve meaningful participation in daily activities. Through personalized interventions, occupational therapists address.', 'url' => '/Our_Service',],
-        //     ['image' => 'assets/images/service_logo/Asset 1.png', 'title' => 'Speech Therapy', 'desc' => ' Speech therapy is a specialized field aimed at improving communication and swallowing abilities. Speech therapists assess and treat a range of speech, language, and swallowing disorders.', 'url' => '/Our_Service',]
-        // ];
+    public function recommended(){
+        return Blogs::inRandomOrder()->limit(3)->get();
     }
-    public function gallery($limit = 0) {
+    
+    public function blog($slug)
+    {
+        $results = Blogs::whereRaw('LOWER(name) LIKE ?', ['%' . strtolower($slug) . '%'])->get()->first()->toArray();
+        $randomBlogs = Blogs::inRandomOrder()->limit(3)->get();
+        return view('single_blog', ['data'=>$results, 'recent'=>$randomBlogs]);
+    }
+
+    public function blogs($limit = 0)
+    {
+        if ($limit) return Blogs::with('category')->take($limit)->get();
+        return Blogs::with('category')->get();
+    }
+    public function Category()
+    {
+        return Category::get();
+    }
+    public function services($limit = 0)
+    {
+        return Services::get();
+    }
+    public function gallery($limit = 0)
+    {
         return [
-            'title' => 'Client Photo','subline'=> 'People are connected with us','photo'=>[
+            'title' => 'Client Photo', 'subline' => 'People are connected with us', 'photo' => [
                 'assets/images/gallery/gallery_image_1-min.jpg',
                 'assets/images/gallery/gallery_image_1-min.jpg',
                 'assets/images/gallery/gallery_image_1-min.jpg',
@@ -66,7 +96,8 @@ class Routing extends Controller
             ]
         ];
     }
-    public function testimonials($limit = 0) {
+    public function testimonials($limit = 0)
+    {
         return [
             ['title' => 'Arshia Tabassum', 'description' => 'Dr.Sakshi was giving physiotherapy to my mother who has lung infection. She was very polite and friendly to my mother. She knows how to handle senior citizens. My mother was very comfortable with her. My mother\'s physical condition had improved because of Dr.
             Sakshi\'s physiotherapy.', 'ratings' => 5],

@@ -1,26 +1,11 @@
-<section class="faq_section" style="padding-bottom:10rem">
+<section class="blog_section section_space_lg">
     <div class="container">
         <div class="section_heading">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2 class="section_heading_text mb-0">Latest Blogs</h2>
-                </div>
-                <div class="col-md-6 d-none d-md-flex justify-content-end">
-                    <a class="btn btn-primary" href="/blogs">
-                        <span class="btn_text" data-text="Read More Blogs">
-                            Read More Blogs
-                        </span>
-                        <span class="btn_icon">
-                            <i class="fa-solid fa-arrow-up-right"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
+            <h2 class="section_heading_text mb-0">Recommended Articles</h2>
         </div>
-
-        <div class="row justify-content-center">
-            @foreach ($data['blogs'] as $cat)
-                <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="row">
+            @foreach ($recent as $cat)
+                <div class="col-lg-4">
                     <div class="blog_item">
                         <div class="blog_image">
                             <a class="blog_image_wrap" href="/blogs/{{ \Str::slug($cat['name']) }}">
@@ -46,17 +31,6 @@
                     </div>
                 </div>
             @endforeach
-        </div>
-
-        <div class="btn_wrap pb-0 text-center d-md-none d-block">
-            <a class="btn btn-primary" href="/blogs">
-                <span class="btn_text" data-text="Read More Blogs">
-                    Read More Blogs
-                </span>
-                <span class="btn_icon">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </span>
-            </a>
         </div>
     </div>
 </section>

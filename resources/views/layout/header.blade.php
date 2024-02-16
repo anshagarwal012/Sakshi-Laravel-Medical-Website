@@ -4,7 +4,7 @@
             <div class="col-lg-3 col-5">
                 <div class="site_logo">
                     <a class="site_link" href="/">
-                        <img src="assets/images/site_logo/company.jpg" alt="handle With Ease" width="213"
+                        <img src="/assets/images/site_logo/company.jpg" alt="handle With Ease" width="213"
                             height="38">
                     </a>
                 </div>
