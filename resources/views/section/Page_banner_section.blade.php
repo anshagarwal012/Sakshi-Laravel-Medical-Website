@@ -13,11 +13,9 @@
         </div>
     </div>
     <div class="decoration_item shape_leaf_1">
-        <img src="/assets/images/shapes/shape_leaf_left.svg"
-            alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+        <img src="/assets/images/shapes/shape_leaf_left.svg" alt="Shape Leaf - Handle With Ease">
     </div>
     <div class="decoration_item shape_leaf_2">
-        <img src="/assets/images/shapes/shape_leaf_right.svg"
-            alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+        <img src="/assets/images/shapes/shape_leaf_right.svg" alt="Shape Leaf - Handle With Ease">
     </div>
 </section>

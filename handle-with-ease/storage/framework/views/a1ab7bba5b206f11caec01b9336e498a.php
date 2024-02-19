@@ -20,7 +20,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Kerry Banks</h3>
@@ -43,7 +43,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Damian York</h3>
@@ -66,7 +66,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Kerry Banks</h3>
@@ -89,7 +89,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Damian York</h3>
@@ -112,7 +112,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Kerry Banks</h3>
@@ -135,7 +135,7 @@
               </ul>
               <div class="author_box">
                 <div class="author_box_image">
-                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Talking Minds - Psychotherapist Site Template">
+                  <img src="assets/images/meta/author_image_1.png" alt="Reviewer Image - Handle With Ease">
                 </div>
                 <div class="author_box_content">
                   <h3 class="author_box_name">Damian York</h3>

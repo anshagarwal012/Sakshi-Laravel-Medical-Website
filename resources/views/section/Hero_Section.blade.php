@@ -7,8 +7,8 @@
                         Geniune Commitment To Your Health
                     </h1>
                     <p class="heading_description">
-                        Welcome to handle with ease where healing meets expertise under the guidance of DR Sakshi
-                        Chaurasia As a seasoned physiotherapist ,Dr Sakshi Brings as wealth of Knowledge and a
+                        Welcome to handle with ease where healing meets expertise under the guidance of Dr.Sakshi
+                        Chaurasia As a seasoned physiotherapist,Dr.Sakshi Brings as wealth of Knowledge and a
                         compassionate touch to our specialized care and tailored solutions for our Patients
                     </p>
                     <ul class="btns_group unordered_list">
@@ -82,7 +82,6 @@
     </div>
     <div class="decoration_item shape_blur_shadow"></div>
     <div class="decoration_item shape_leaf">
-        <img src="assets/images/shapes/shape_leaf_left_top.svg"
-            alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+        <img src="assets/images/shapes/shape_leaf_left_top.svg" alt="Shape Leaf - Handle With Ease">
     </div>
 </section>

@@ -19,7 +19,7 @@
     </div>
     <div class="topnav">
         <div class="container-fluid">
-            <nav class="navbar navbar-light navbar-expand-lg topnav-menu d-flex">
+            <nav class="navbar navbar-light navbar-expand-md topnav-menu d-flex">
                 <div class="collapse navbar-collapse" id="topnav-menu-content">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -68,6 +68,12 @@
                             <a class="nav-link" href="/admin/gallery" id="topnav-dashboard" role="button">
                                 <i class="bx bxs-photo-album icon nav-icon"></i>
                                 <span data-key="t-dashboards">Gallery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="/admin/Booking" id="topnav-dashboard" role="button">
+                                <i class="bx bxs-contact icon nav-icon"></i>
+                                <span data-key="t-dashboards">Booking</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">

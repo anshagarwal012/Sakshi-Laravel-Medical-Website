@@ -52,6 +52,9 @@ class Routing extends Controller
                     $data['blogs'] = $this->recommended();
                     $data['Category'] = $this->Category();
                     break;
+                case 'book':
+                    $data['services'] = $this->services();
+                    break;
             }
             return view($request->path(), ['data' => $data]);
         } else {
@@ -59,15 +62,16 @@ class Routing extends Controller
         }
     }
 
-    public function recommended(){
+    public function recommended()
+    {
         return Blogs::inRandomOrder()->limit(3)->get();
     }
-    
+
     public function blog($slug)
     {
         $results = Blogs::whereRaw('LOWER(name) LIKE ?', ['%' . strtolower($slug) . '%'])->get()->first()->toArray();
         $randomBlogs = Blogs::inRandomOrder()->limit(3)->get();
-        return view('single_blog', ['data'=>$results, 'recent'=>$randomBlogs]);
+        return view('single_blog', ['data' => $results, 'recent' => $randomBlogs]);
     }
 
     public function blogs($limit = 0)

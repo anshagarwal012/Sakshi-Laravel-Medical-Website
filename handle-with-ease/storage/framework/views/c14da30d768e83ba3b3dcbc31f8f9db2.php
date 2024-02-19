@@ -80,6 +80,6 @@
     </div>
     <div class="decoration_item shape_blur_shadow"></div>
     <div class="decoration_item shape_leaf">
-      <img src="assets/images/shapes/shape_leaf_left_top.svg" alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+      <img src="assets/images/shapes/shape_leaf_left_top.svg" alt="Shape Leaf - Handle With Ease">
     </div>
   </section><?php /**PATH E:\Ansh\psychotherapist\Template\Sakshi-Laravel-Medical-Website\handle-with-ease\resources\views/section/Hero_Section.blade.php ENDPATH**/ ?>

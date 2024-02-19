@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::post('contact', [App\Http\Controllers\Backend::class, 'contact']);
+Route::post('booking', [App\Http\Controllers\Backend::class, 'booking']);

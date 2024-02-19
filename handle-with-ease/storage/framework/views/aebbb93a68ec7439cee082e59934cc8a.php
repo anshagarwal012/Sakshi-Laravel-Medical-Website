@@ -5,12 +5,12 @@
           <div class="images_group_widget">
             <ul class="unordered_list">
               <li>
-                <img src="assets/images/about/about_image_2-min.png" alt="Talking Minds - Psychotherapist Site Template">
-                <img src="assets/images/about/about_image_4-min.png" alt="Talking Minds - Psychotherapist Site Template">
+                <img src="assets/images/about/about_image_2-min.png" alt="Handle With Ease">
+                <img src="assets/images/about/about_image_4-min.png" alt="Handle With Ease">
               </li>
               <li>
-                <img src="assets/images/about/about_image_3-min.png" alt="Talking Minds - Psychotherapist Site Template">
-                <img src="assets/images/about/about_image_5-min.png" alt="Talking Minds - Psychotherapist Site Template">
+                <img src="assets/images/about/about_image_3-min.png" alt="Handle With Ease">
+                <img src="assets/images/about/about_image_5-min.png" alt="Handle With Ease">
               </li>
             </ul>
           </div>

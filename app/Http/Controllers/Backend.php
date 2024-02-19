@@ -10,6 +10,7 @@ use App\Models\Category;
 use App\Models\Services;
 use App\Models\Faqs;
 use App\Models\Blogs;
+use App\Models\booking;
 use App\Models\Contactus;
 use App\Models\Gallery;
 use App\Models\Reviews;
@@ -56,6 +57,9 @@ class Backend extends Controller
                         break;
                     case 'admin/contact':
                         $data = Contactus::get();
+                        break;
+                    case 'admin/booking':
+                        $data = booking::get();
                         break;
                     case 'admin/dashboard':
                         $data['Blogs'] = Blogs::count();
@@ -185,6 +189,15 @@ class Backend extends Controller
     {
         $data = $request->all();
         Contactus::create($data);
+        return [
+            'status' => 1,
+            'message' => 'Thanks for contacting us :)'
+        ];
+    }
+    public function booking(Request $request)
+    {
+        $data = $request->all();
+        booking::create($data);
         return [
             'status' => 1,
             'message' => 'Thanks for contacting us :)'

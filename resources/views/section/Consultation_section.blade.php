@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="input_calendar">Phone</label>
+                                <label for="input_calendar">Calendar</label>
                                 <input id="input_calendar" class="form-control" type="date" name="date">
                             </div>
                         </div>

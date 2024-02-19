@@ -176,9 +176,9 @@
     </div>
 
     <div class="decoration_item shape_leaf_1">
-      <img src="assets/images/shapes/shape_leaf_right_top.svg" alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+      <img src="assets/images/shapes/shape_leaf_right_top.svg" alt="Shape Leaf - Handle With Ease">
     </div>
     <div class="decoration_item shape_leaf_2">
-      <img src="assets/images/shapes/shape_leaf_left_bottom.svg" alt="Shape Leaf - Talking Minds - Psychotherapist Site Template">
+      <img src="assets/images/shapes/shape_leaf_left_bottom.svg" alt="Shape Leaf - Handle With Ease">
     </div>
   </section><?php /**PATH E:\Ansh\psychotherapist\Template\Sakshi-Laravel-Medical-Website\handle-with-ease\resources\views/section/Pricing_section.blade.php ENDPATH**/ ?>

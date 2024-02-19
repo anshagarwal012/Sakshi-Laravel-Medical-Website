@@ -38,8 +38,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_1-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_1-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Family psychologist, Psy. D</h3>
@@ -56,8 +55,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_2-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_2-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Clinical psychologist, Psy. D</h3>
@@ -74,8 +72,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_3-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_3-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Practicing Psychologist</h3>
@@ -92,8 +89,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_4-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_4-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Practicing psychologist, Psy. D</h3>
@@ -110,8 +106,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_5-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_5-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Clinical psychologist, Psy. D</h3>
@@ -128,8 +123,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="team_item">
                     <div class="team_memder_image">
-                        <img src="assets/images/team/professional_img_6-min.jpg"
-                            alt="Talking Minds - Psychotherapist Site Template">
+                        <img src="assets/images/team/professional_img_6-min.jpg" alt="Handle With Ease">
                     </div>
                     <div class="team_memder_info text-center">
                         <h3 class="team_memder_designation">Child Psychologist</h3>
