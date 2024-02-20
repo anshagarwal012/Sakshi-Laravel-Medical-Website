@@ -94,6 +94,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col-lg-4">
+                                <div class="card bg-danger border-danger text-white-50">
+                                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                        <h5 class="mb-4 text-white">Appoinment</h5>
+                                        <div class="count">
+                                            <p class="card-title text-white fs-4 text-center">
+                                                {{ $data['booking'] }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -34,23 +34,26 @@
                                             <th>Phone Number</th>
                                             <th>Service</th>
                                             <th>Date</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach ($data as $key => $item)
                                             <tr>
                                                 <td>{{ $key + 1 }}</td>
-                                                <td>{{ $item['Name'] }}</td>
-                                                <td>{{ $item['PhoneNumber'] }}</td>
-                                                <td>{{ $item['Service'] }}</td>
-                                                <td>{{ $item['Date'] }}</td>
-                                                <form action="{{ url()->current() }}" class="col-md-6 p-0" method="POST">
-                                                    @method('delete')
-                                                    @csrf
-                                                    <input type="submit" class="btn btn-danger me-1" value="Delete">
-                                                    <input type="hidden" required name="id"
-                                                        value="{{ $item['id'] }}">
-                                                </form>
+                                                <td>{{ $item['name'] }}</td>
+                                                <td>{{ $item['phone'] }}</td>
+                                                <td>{{ $item['section'] }}</td>
+                                                <td>{{ $item['calendar'] }}</td>
+                                                <td>
+                                                    <form action="{{ url()->current() }}" class="col-md-6 p-0"
+                                                        method="POST">
+                                                        @method('delete')
+                                                        @csrf
+                                                        <input type="submit" class="btn btn-danger me-1" value="Delete">
+                                                        <input type="hidden" required name="id"
+                                                            value="{{ $item['id'] }}">
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @endforeach

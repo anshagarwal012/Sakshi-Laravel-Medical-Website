@@ -58,7 +58,7 @@ class Backend extends Controller
                     case 'admin/contact':
                         $data = Contactus::get();
                         break;
-                    case 'admin/booking':
+                    case 'admin/Booking':
                         $data = booking::get();
                         break;
                     case 'admin/dashboard':
@@ -68,6 +68,7 @@ class Backend extends Controller
                         $data['Services'] = Services::count();
                         $data['Reviews'] = Reviews::count();
                         $data['Contact'] = Contactus::count();
+                        $data['booking'] = booking::count();
                         break;
                 }
                 return view($request->path(), ['data' => $data]);
@@ -168,6 +169,8 @@ class Backend extends Controller
                 Gallery::where('id', $request->id)->delete();
             case 'admin/contact':
                 Contactus::where('id', $request->id)->delete();
+            case 'admin/Booking':
+                booking::where('id', $request->id)->delete();
         }
         return back()->with('messages', "Date Deleted successfully");
     }

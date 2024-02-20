@@ -36,7 +36,7 @@
                                 <select id="select_therapy" class="form-select" aria-label="Therapy Select Options"
                                     name="section">
                                     @foreach ($data['services'] as $Services)
-                                        <option value="{{ $Services['id'] }}">{{ $Services['title'] }}</option>
+                                        <option value="{{ $Services['title'] }}">{{ $Services['title'] }}</option>
                                     @endforeach
                                 </select>
                             </div>
