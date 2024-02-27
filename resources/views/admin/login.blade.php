@@ -22,7 +22,7 @@
                     <div class="row justify-content-center my-auto">
                         <div class="mb-4 pb-2">
                             <a href="/admin/login" class="d-block auth-logo">
-                                <img src="{{ URL::asset('assets/images/site_logo/company.jpg') }}" alt=""
+                                <img src="{{ URL::asset('assets/images/site_logo/company.png') }}" alt=""
                                     class="auth-logo-dark me-start" width="200">
                             </a>
                         </div>
