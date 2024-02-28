@@ -5,10 +5,10 @@
             {{-- <div class="navbar-brand-box"> --}}
             <a href="/" class="logo logo-dark">
                 <span class="logo-sm">
-                    <img src="{{ URL::asset('assets/images/site_logo/company.jpg') }}" class="" width="200">
+                    <img src="{{ URL::asset('assets/images/site_logo/company.png') }}" class="" width="200">
                 </span>
                 <span class="logo-lg">
-                    <img src="{{ URL::asset('assets/images/site_logo/company.jpg') }}" class="" width="200">
+                    <img src="{{ URL::asset('assets/images/site_logo/company.png') }}" class="" width="200">
                 </span>
             </a>
             <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item" data-bs-toggle="collapse"
