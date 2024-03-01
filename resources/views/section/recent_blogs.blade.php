@@ -8,7 +8,7 @@
                 <div class="col-lg-4">
                     <div class="blog_item">
                         <div class="blog_image">
-                            <a class="blog_image_wrap" href="/blogs/{{ \Str::slug($cat['name']) }}">
+                            <a class="blog_image_wrap" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
                                 <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}">
                             </a>
                         </div>
@@ -20,10 +20,10 @@
                                 <li>{{ $cat['created_at'] }}</li>
                             </ul>
                             <h3 class="item_title">
-                                <a href="/blogs/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
+                                <a href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                             </h3>
                             <p>{{ $cat['desc'] }}</p>
-                            <a class="btn-link" href="/blogs/{{ \Str::slug($cat['name']) }}">
+                            <a class="btn-link" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
                                 <span class="btn_text">Read More</span>
                                 <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                             </a>
