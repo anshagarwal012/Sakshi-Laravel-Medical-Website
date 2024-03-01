@@ -52,8 +52,6 @@
                                                             method="POST">
                                                             @method('PUT')
                                                             @csrf
-                                                            <input type="submit" class="btn btn-primary me-1"
-                                                                value="Edit">
                                                             <input type="hidden" name="id"
                                                                 value="{{ $item['id'] }}">
                                                         </form>
