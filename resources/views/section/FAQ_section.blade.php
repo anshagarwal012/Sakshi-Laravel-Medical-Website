@@ -4,8 +4,8 @@
             <div class="col-lg-6">
                 <div class="images_group_widget">
                     <ul class="unordered_list">
-                        <li><img src="assets/images/about/as1.jpg"></li>
-                        <li><img src="assets/images/about/as2.jpg"></li>
+                        <li><img src="assets/images/about/as1.jpg" alt="Handle with ease"></li>
+                        <li><img src="assets/images/about/as2.jpg" alt="Handle with ease"></li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,8 @@
-<section class="blog_details_section section_space_lg pb-0">
+<section class="blog_details_section section_space_lg pt-5 pb-0">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+                <h2>{{$data['name']}}</h2><br>
                 <div class="details_image">
                     <img src="{{ $data['image'] }}" alt="{{ $data['name'] }}">
                 </div>

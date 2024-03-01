@@ -1,4 +1,6 @@
 @extends('layout.master')
+@section('title', 'About Page')
+@section('description', 'Dr. Sakshi chaurasia, A leading expert in neurological and pediatric physiotherapy, Dr. Sakshi is dedicated to transforming lives through personalized care.')
 @section('content')
     @include('section.Page_banner_section', ['page' => 'About'])
     @include('section.About_section')

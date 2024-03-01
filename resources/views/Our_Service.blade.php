@@ -1,4 +1,6 @@
 @extends('layout.master')
+@section('title', 'Services')
+@section('description', 'Experience tailored physiotherapy treatments for holistic healing, improving mobility, and relieving pain effectively and safely.')
 @section('content')
     @include('section.Page_banner_section', ['page' => 'Services'])
     @include('section.Service_Section',['services_button' => false])

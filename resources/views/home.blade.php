@@ -1,4 +1,6 @@
 @extends('layout.master')
+@section('title', 'Home Page')
+@section('description', 'Welcome to handle with ease where healing meets expertise under the guidance of Dr.Sakshi Chaurasia As a seasoned physiotherapist')
 @section('content')
     {{-- {{dd($data)}} --}}
     @include('section.Hero_Section')

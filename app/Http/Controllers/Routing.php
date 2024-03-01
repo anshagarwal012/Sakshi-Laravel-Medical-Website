@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
 use App\Models\Services;
@@ -67,9 +68,9 @@ class Routing extends Controller
         return Blogs::inRandomOrder()->limit(3)->get();
     }
 
-    public function blog($slug)
+    public function blog($id)
     {
-        $results = Blogs::whereRaw('LOWER(name) LIKE ?', ['%' . strtolower($slug) . '%'])->get()->first()->toArray();
+        $results = Blogs::where('id', $id)->get()->first()->toArray();
         $randomBlogs = Blogs::inRandomOrder()->limit(3)->get();
         return view('single_blog', ['data' => $results, 'recent' => $randomBlogs]);
     }

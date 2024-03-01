@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\Routing::class, 'root']);
 Route::get('{any}', [App\Http\Controllers\Routing::class, 'index']);
-Route::get('blogs/{slug}', [App\Http\Controllers\Routing::class, 'blog']);
+Route::get('blogs/{id}/{slug}', [App\Http\Controllers\Routing::class, 'blog']);
 Route::get('admin/{page}', [App\Http\Controllers\Backend::class, 'index']);
 Route::post('admin/{page}', [App\Http\Controllers\Backend::class, 'post_']);
 Route::delete('admin/{page}', [App\Http\Controllers\Backend::class, 'delete_']);
