@@ -111,6 +111,7 @@ class Backend extends Controller
                     $data = $request->all();
                     $file = $request->file('image');
                     $fileName = time() . '_' . $file->getClientOriginalName();
+                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
                     $data['image'] = $fileName;
                     $d = Blogs::create($data);
                     if ($d) {

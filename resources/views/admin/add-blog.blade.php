@@ -65,15 +65,17 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <div class="mb-3">
+                                                        <div class="mb-3  d-none">
+                                                            <input type="hidden" name="category_id"
+                                                                value="{{ $data['category'][0]['id'] }}">
                                                             <label class="form-label">Category</label>
-                                                            <select class="form-control" required name="category_id">
+                                                            {{-- <select class="form-control" required name="category_id">
                                                                 <option value="">Select</option>
                                                                 @foreach ($data['category'] as $item)
                                                                     <option value="{{ $item['id'] }}">
                                                                         {{ $item['name'] }}</option>
                                                                 @endforeach
-                                                            </select>
+                                                            </select> --}}
                                                         </div>
                                                         <div class="mb-3">
                                                             <label for="choices-single-specifications"
