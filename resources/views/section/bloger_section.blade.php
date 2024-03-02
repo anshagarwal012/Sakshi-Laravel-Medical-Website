@@ -28,9 +28,9 @@
                             </a>
                         </div>
                         <div class="blog_content">
-                            <ul class="post_category unordered_list">
+                            {{-- <ul class="post_category unordered_list">
                                 <li><a href="#!">{{ $cat['category']['name'] }}</a></li>
-                            </ul>
+                            </ul> --}}
                             <ul class="post_meta unordered_list">
                                 <li>{{ $cat['created_at'] }}</li>
                             </ul>

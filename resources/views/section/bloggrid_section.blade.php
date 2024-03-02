@@ -12,9 +12,9 @@
                                     </a>
                                 </div>
                                 <div class="blog_content">
-                                    <ul class="post_category unordered_list">
+                                    {{-- <ul class="post_category unordered_list">
                                         <li><a href="#!">{{ $cat['category']['name'] }}</a></li>
-                                    </ul>
+                                    </ul> --}}
                                     <ul class="post_meta unordered_list">
                                         <li>{{ $cat['created_at'] }}</li>
                                     </ul>
@@ -51,7 +51,7 @@
                             <i class="fa-regular fa-magnifying-glass"></i>
                         </button>
                     </div>
-                    <div class="sidebar_widget">
+                    {{-- <div class="sidebar_widget">
                         <h3 class="sidebar_widget_title">
                             <span class="title_icon">
                                 <img src="assets/images/site_logo/favourite_icon.svg" alt="Handle With Ease">
@@ -63,12 +63,12 @@
                                 <li>
                                     <a href="#!">
                                         <span class="category_name">{{ $cat['name'] }}</span>
-                                        {{-- <span class="category_counter">{{$cat['count']}}</span> --}}
+                                        <span class="category_counter">{{$cat['count']}}</span>
                                     </a>
                                 </li>
                             @endforeach
                         </ul>
-                    </div>
+                    </div> --}}
                     <div class="sidebar_widget">
                         <h3 class="sidebar_widget_title">
                             <span class="title_icon">
