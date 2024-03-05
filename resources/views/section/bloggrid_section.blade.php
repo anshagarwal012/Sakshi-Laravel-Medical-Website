@@ -7,7 +7,8 @@
                         <div class="col-md-6">
                             <div class="blog_item">
                                 <div class="blog_image">
-                                    <a class="blog_image_wrap" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
+                                    <a class="blog_image_wrap"
+                                        href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                         <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}">
                                     </a>
                                 </div>
@@ -19,11 +20,13 @@
                                         <li>{{ $cat['created_at'] }}</li>
                                     </ul>
                                     <h3 class="item_title">
-                                        <a href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
+                                        <a
+                                            href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                                     </h3>
                                     <p>{{ $cat['desc'] }}</p>
-                                    <a class="btn-link" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
-                                        <span class="btn_text">Read More</span>
+                                    <a class="btn-link"
+                                        href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
+                                        <span class="btn_text">More</span>
                                         <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                     </a>
                                 </div>
@@ -81,14 +84,15 @@
                                 <li>
                                     <div class="blog_item_small">
                                         <div class="blog_image">
-                                            <a class="blog_image_wrap" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
+                                            <a class="blog_image_wrap"
+                                                href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                                 <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}">
                                             </a>
                                         </div>
                                         <div class="blog_content">
                                             <h3 class="item_title">
                                                 <a
-                                                    href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
+                                                    href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                                             </h3>
                                             <ul class="post_meta unordered_list">
                                                 <li>{{ $cat['created_at'] }}</li>

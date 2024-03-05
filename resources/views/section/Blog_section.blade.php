@@ -7,8 +7,8 @@
                 </div>
                 <div class="col-md-6 d-none d-md-flex justify-content-end">
                     <a class="btn btn-primary" href="">
-                        <span class="btn_text" data-text="Read More Articles">
-                            Read More Articles
+                        <span class="btn_text" data-text="More Articles">
+                            More Articles
                         </span>
                         <span class="btn_icon">
                             <i class="fa-solid fa-arrow-up-right"></i>
@@ -46,7 +46,7 @@
                             culpa qui officia deserunt.
                         </p>
                         <a class="btn-link" href="blog_details.html">
-                            <span class="btn_text">Read More</span>
+                            <span class="btn_text">More</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
                     </div>
@@ -79,7 +79,7 @@
                             culpa qui officia deserunt.
                         </p>
                         <a class="btn-link" href="blog_details.html">
-                            <span class="btn_text">Read More</span>
+                            <span class="btn_text">More</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
                     </div>
@@ -112,7 +112,7 @@
                             culpa qui officia deserunt.
                         </p>
                         <a class="btn-link" href="blog_details.html">
-                            <span class="btn_text">Read More</span>
+                            <span class="btn_text">More</span>
                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                         </a>
                     </div>
@@ -122,8 +122,8 @@
 
         <div class="btn_wrap pb-0 text-center d-md-none d-block">
             <a class="btn btn-primary" href="">
-                <span class="btn_text" data-text="Read More Articles">
-                    Read More Articles
+                <span class="btn_text" data-text="More Articles">
+                    More Articles
                 </span>
                 <span class="btn_icon">
                     <i class="fa-solid fa-arrow-up-right"></i>

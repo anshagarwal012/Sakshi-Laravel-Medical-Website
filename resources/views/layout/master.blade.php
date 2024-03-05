@@ -10,7 +10,7 @@
     <meta name=”robots” content="index, follow">
     <meta name="keywords" content="@yield('keywords', 'physiotherapist,what is a physiotherapist,physiotherapist vs physical therapist,physiotherapist definition,physiotherapist salary,physiotherapist near me,pelvic floor physiotherapist,physiotherapist clinic,physiotherapist clinics,back pain physiotherapist')">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    <link rel="canonical" href="https://handlewithease.com/" />
+    <link rel="canonical" href="https://handlewithease.com/">
 
     @include('layout.head-css')
 </head>

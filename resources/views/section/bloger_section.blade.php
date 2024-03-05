@@ -7,8 +7,8 @@
                 </div>
                 <div class="col-md-6 d-none d-md-flex justify-content-end">
                     <a class="btn btn-primary" href="/blogs">
-                        <span class="btn_text" data-text="Read More Blogs">
-                            Read More Blogs
+                        <span class="btn_text" data-text="More Blogs">
+                            More Blogs
                         </span>
                         <span class="btn_icon">
                             <i class="fa-solid fa-arrow-up-right"></i>
@@ -23,7 +23,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog_item">
                         <div class="blog_image">
-                            <a class="blog_image_wrap" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
+                            <a class="blog_image_wrap" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                 <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}">
                             </a>
                         </div>
@@ -35,11 +35,12 @@
                                 <li>{{ $cat['created_at'] }}</li>
                             </ul>
                             <h3 class="item_title">
-                                <a href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
+                                <a
+                                    href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                             </h3>
                             <p>{{ $cat['desc'] }}</p>
-                            <a class="btn-link" href="/blogs/{{$cat['id']}}/{{ \Str::slug($cat['name']) }}">
-                                <span class="btn_text">Read More</span>
+                            <a class="btn-link" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
+                                <span class="btn_text">More</span>
                                 <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                             </a>
                         </div>
@@ -50,8 +51,8 @@
 
         <div class="btn_wrap pb-0 text-center d-md-none d-block">
             <a class="btn btn-primary" href="/blogs">
-                <span class="btn_text" data-text="Read More Blogs">
-                    Read More Blogs
+                <span class="btn_text" data-text="More Blogs">
+                    More Blogs
                 </span>
                 <span class="btn_icon">
                     <i class="fa-solid fa-arrow-up-right"></i>
