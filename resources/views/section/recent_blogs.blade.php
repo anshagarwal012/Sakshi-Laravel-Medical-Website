@@ -23,8 +23,7 @@
                                 <a
                                     href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                             </h3>
-                            <p>{{ $cat['desc'] }}</p>
-                            <p>
+                            <p>{{ $cat['desc'] }}<br>
                                 <a class="btn-link" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
