@@ -7,8 +7,8 @@
                 </div>
                 <div class="col-md-6 d-none d-md-flex justify-content-end">
                     <a class="btn btn-primary" href="/blogs">
-                        <span class="btn_text" data-text="Read More Blogs">
-                            Read More Blogs
+                        <span class="btn_text" data-text="More Blogs">
+                            More Blogs
                         </span>
                         <span class="btn_icon">
                             <i class="fa-solid fa-arrow-up-right"></i>
@@ -39,12 +39,19 @@
                                     href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                             </h3>
                             <p>{{ $cat['desc'] }}</p>
+<<<<<<< HEAD
                             <p>
                                 <a class="btn-link" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                     <span class="btn_text">Read More</span>
                                     <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
                             </p>
+=======
+                            <a class="btn-link" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
+                                <span class="btn_text">More</span>
+                                <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                            </a>
+>>>>>>> ea6b1923b3807401f5dbe0521ec61382b23d4c42
                         </div>
                     </div>
                 </div>
@@ -53,8 +60,8 @@
 
         <div class="btn_wrap pb-0 text-center d-md-none d-block">
             <a class="btn btn-primary" href="/blogs">
-                <span class="btn_text" data-text="Read More Blogs">
-                    Read More Blogs
+                <span class="btn_text" data-text="More Blogs">
+                    More Blogs
                 </span>
                 <span class="btn_icon">
                     <i class="fa-solid fa-arrow-up-right"></i>
