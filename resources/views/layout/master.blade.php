@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <title>@yield('title') - Handle With Ease</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,23 +10,26 @@
     <meta name=”robots” content="index, follow">
     <meta name="keywords" content="@yield('keywords', 'physiotherapist,what is a physiotherapist,physiotherapist vs physical therapist,physiotherapist definition,physiotherapist salary,physiotherapist near me,pelvic floor physiotherapist,physiotherapist clinic,physiotherapist clinics,back pain physiotherapist')">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="canonical" href="https://handlewithease.com/" />
 
     @include('layout.head-css')
 </head>
+
 <body>
     <div class="page_wrapper">
         <div class="backtotop">
             <a href="#" class="scroll">
-              <i class="fa-solid fa-arrow-up"></i>
+                <i class="fa-solid fa-arrow-up"></i>
             </a>
-          </div>
+        </div>
 
-          @include('layout.header')
-          <main class="page_content">
+        @include('layout.header')
+        <main class="page_content">
             @yield('content')
-          </main>
-          @include('layout.footer')
+        </main>
+        @include('layout.footer')
     </div>
     @include('layout.scripts')
 </body>
+
 </html>
