@@ -6,14 +6,15 @@
                 Customers Review And Response
             </p>
         </div>
-
         <div class="testimonial_carousel">
             <div class="carousel_2col row" data-slick='{"arrows":false}'>
                 @foreach ($data['testimonials'] as $item)
                     <div class="carousel_item col-6">
                         <div class="testimonial_item">
-                            <div class="image-review style="width: 18rem;>
-                                <img class=""src="{{ asset($item['images']) }}" alt="Handle with Ease">
+                            <div class="blog_image">
+                                <a class="blog_image_wrap">
+                                    <img src="{{ $item['path'] }}" alt="handle with ease">
+                                </a>
                             </div>
                             <ul class="rating_star unordered_list">
                                 {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['ratings']) !!}
