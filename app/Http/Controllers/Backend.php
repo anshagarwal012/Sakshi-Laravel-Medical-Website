@@ -69,6 +69,7 @@ class Backend extends Controller
                         $data['Reviews'] = Reviews::count();
                         $data['Contact'] = Contactus::count();
                         $data['booking'] = booking::count();
+                        $data['Gallery'] = booking::count();
                         break;
                 }
                 return view($request->path(), ['data' => $data]);

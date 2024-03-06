@@ -66,10 +66,12 @@
                                                 <td>{{ $item['type'] }}</td>
                                                 <td>
                                                     @if ($item['type'] == 'Photo')
-                                                        <img width="50" src="{{ $item['path'] }}">
+                                                        <img width="50"
+                                                            src=" {{ '/storage/uploads/' . $item['images'] }}">
                                                     @else
                                                         <video width="200" controls autoplay muted>
-                                                            <source src="{{ $item['path'] }}" type="video/mp4">
+                                                            <source src="{{ '/storage/uploads/' . $item['images'] }}"
+                                                                type="video/mp4">
                                                         </video>
                                                     @endif
                                                 </td>

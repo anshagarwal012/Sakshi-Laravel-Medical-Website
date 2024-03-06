@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
@@ -86,31 +87,14 @@ class Routing extends Controller
     }
     public function services($limit = 0)
     {
-        return Services::get();
+        return services::get();
     }
     public function gallery($limit = 0)
     {
-        return [
-            'title' => 'Client Photo', 'subline' => 'People are connected with us', 'photo' => [
-                'assets/images/gallery/gallery_image_1-min.jpg',
-                'assets/images/gallery/gallery_image_1-min.jpg',
-                'assets/images/gallery/gallery_image_1-min.jpg',
-                'assets/images/gallery/gallery_image_1-min.jpg',
-                'assets/images/gallery/gallery_image_1-min.jpg',
-                'assets/images/gallery/gallery_image_1-min.jpg',
-            ]
-        ];
+        return Gallery::get();
     }
     public function testimonials($limit = 0)
     {
-        return [
-            ['title' => 'Arshia Tabassum', 'description' => 'Dr.Sakshi was giving physiotherapy to my mother who has lung infection. She was very polite and friendly to my mother. She knows how to handle senior citizens. My mother was very comfortable with her. My mother\'s physical condition had improved because of Dr.
-            Sakshi\'s physiotherapy.', 'ratings' => 5],
-            ['title' => 'Deepak Sharma', 'description' => 'Highly recommend this physiotherapy She is friendly and professional, and the facility is clean and well-equipped. After just a few sessions, I already feel a noticeable improvement in my mobility and strength', 'ratings' => 4],
-            ['title' => 'Abhay Singh', 'description' => 'Outstanding physiotherapy!.They combine professionalism with a personal touch, ensuring that every session is effective and enjoyable. I appreciate the holistic approach they take to address both my physical and emotional well-being.', 'ratings' => 3],
-            ['title' => 'Himanshu Verma', 'description' => 'Five-star experience! From the moment I walked in, I felt welcomed and supported. The therapist here are truly dedicated to helping their Patients achieve their goals. I\'m grateful for the progress I\'ve made under their guidance.', 'ratings' => 2],
-            ['title' => 'Abhishek Tripathi', 'description' => 'After struggling with chronic pain for months, I finally decided to try physiotherapy, and I\'m so glad I did. The therapist here are skilled at identifying the root cause of my discomfort and providing targeted treatment. I\'m already feeling stronger and more confident in my body.', 'ratings' => 1],
-            ['title' => 'Saket Yadav', 'description' => 'Impressive results! I\'ve been struggling with post-surgery recovery, but thanks to the guidance of the skilled therapist, I\'m making significant progress. Their expertise and encouragement have been invaluable on my road to recovery.', 'ratings' => 3],
-        ];
+        return Reviews::get();
     }
 }

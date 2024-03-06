@@ -8,15 +8,25 @@
         </div>
 
         <div class="zoom-gallery row justify-content-center">
-            @foreach ($data['gallery']['photo'] as $key)
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <a class="gallery_item popup_image" href="{{ $key }}">
-                        <img src="{{ $key }}" alt="Handle with Ease">
-                    </a>
-                </div>
+            @foreach ($data['gallery'] as $dataItem)
+                @if ($dataItem['type'] == 'Photo')
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a class="gallery_item popup_image" href="{{ 'storage/uploads/' . $dataItem['images'] }}">
+                            <img src="{{ 'storage/uploads/' . $dataItem['images'] }}" alt="Handle with Ease">
+                        </a>
+                    </div>
+                @else
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <a class="gallery_item">
+                            <video controls autoplay muted>
+                                <source src="{{ '/storage/uploads/' . $dataItem['images'] }}" type="video/mp4">
+                            </video>
+                        </a>
+                    </div>
+                @endif
             @endforeach
         </div>
-        @if ($gallery_button)
+        {{-- @if ($gallery_button)
             <div class="btn_wrap pb-0 text-center">
                 <a class="btn btn-primary" href="/our_gallery">
                     <span class="btn_text" data-text="See More Photos">
@@ -27,6 +37,6 @@
                     </span>
                 </a>
             </div>
-        @endif
+        @endif --}}
     </div>
 </section>
