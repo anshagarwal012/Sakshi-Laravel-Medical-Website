@@ -18,18 +18,17 @@
                                     </a>
                                 </div>
                             @else
-                                <div class="blog_image">
+                                <div class="blog_image d-flex justify-content-center">
                                     <a class="blog_image_wrap">
-                                        <video>
-                                            <source src="{{ $item['path'] }}" alt="handle with ease" type="video/mp4">
+                                        <video width="450" controls autoplay muted>
+                                            <source src="{{ $item['path'] }}" type="video/mp4">
                                         </video>
                                     </a>
                                 </div>
                             @endif
-                            <ul class="rating_star
-                                                unordered_list">
-                                {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['rating']) !!}
-                                {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['rating']) !!}
+                            <ul class="rating_star unordered_list">
+                                {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['stars']) !!}
+                                {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['stars']) !!}
                             </ul>
                             <div class="author_box">
                                 <div class="author_box_content">
