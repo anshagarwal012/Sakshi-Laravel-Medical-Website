@@ -11,7 +11,7 @@
                 @foreach ($data['testimonials'] as $item)
                     <div class="carousel_item col-6">
                         <div class="testimonial_item">
-                            @if ($dataItem['type'] == 'Photo')
+                            @if ($item['type'] == 'Photo')
                                 <div class="blog_image">
                                     <a class="blog_image_wrap">
                                         <img src="{{ $item['path'] }}" alt="handle with ease">
