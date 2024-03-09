@@ -28,8 +28,8 @@
                             @endif
                             <ul class="rating_star
                                                 unordered_list">
-                                {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['ratings']) !!}
-                                {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['ratings']) !!}
+                                {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['rating']) !!}
+                                {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['rating']) !!}
                             </ul>
                             <div class="author_box">
                                 <div class="author_box_content">
