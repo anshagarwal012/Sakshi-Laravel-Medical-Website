@@ -11,24 +11,35 @@
                 @foreach ($data['testimonials'] as $item)
                     <div class="carousel_item col-6">
                         <div class="testimonial_item">
-                            <div class="blog_image">
-                                <a class="blog_image_wrap">
-                                    <img src="{{ $item['path'] }}" alt="handle with ease">
-                                </a>
-                            </div>
-                            <ul class="rating_star unordered_list">
-                                {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['ratings']) !!}
-                                {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['ratings']) !!}
-                            </ul>
-                            <div class="author_box">
-                                <div class="author_box_content">
-                                    <h3 class="author_box_name">{{ $item['title'] }}</h3>
-                                    <span class="author_box_designation">Patient</span>
+                            @if ($dataItem['type'] == 'Photo')
+                                <div class="blog_image">
+                                    <a class="blog_image_wrap">
+                                        <img src="{{ $item['path'] }}" alt="handle with ease">
+                                    </a>
                                 </div>
-                            </div>
-                            <p class="mb-0">{{ $item['description'] }}</p>
+                            @else
+                                <div class="blog_image">
+                                    <a class="blog_image_wrap">
+                                        <video>
+                                            <source src="{{ $item['path'] }}" alt="handle with ease"
+                                                type="video/mp4>
+                                        </video>
+                                    </a>
+                                </div>
+                                <ul class="rating_star
+                                                unordered_list">
+                                            {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['ratings']) !!}
+                                            {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['ratings']) !!}
+                                            </ul>
+                                            <div class="author_box">
+                                                <div class="author_box_content">
+                                                    <h3 class="author_box_name">{{ $item['title'] }}</h3>
+                                                    <span class="author_box_designation">Patient</span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">{{ $item['description'] }}</p>
+                                </div>
                         </div>
-                    </div>
                 @endforeach
             </div>
         </div>
