@@ -30,7 +30,7 @@
                                     <thead>
                                         <tr>
                                             <th>S.No</th>
-                                            <th>Category Name</th>
+                                            {{-- <th>Category Name</th> --}}
                                             <th>Title</th>
                                             <th>Short Description</th>
                                             <th>Image</th>
@@ -41,10 +41,10 @@
                                         @foreach ($data as $key => $item)
                                             <tr>
                                                 <td>{{ $key + 1 }}</td>
-                                                <td>{{ $item['category']['name'] }}</td>
+                                                {{-- <td>{{ $item['category']['name'] }}</td> --}}
                                                 <td>{{ $item['name'] }}</td>
                                                 <td>{{ $item['desc'] }}</td>
-                                                <td> <img src="{{ $item['image'] }}" alt="Handle with Ease" width="100">
+                                                <td> <img src="{{ asset($item['image']) }}" alt="Handle with Ease" width="100">
                                                 </td>
                                                 <td>
                                                     <div class="d-flex">

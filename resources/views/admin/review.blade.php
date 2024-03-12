@@ -45,7 +45,7 @@
                                                 <option value="5" selected>5</option>
                                             </select>
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-3 file_upload_ d-none">
                                             <label class="form-label">Photo/Video</label>
                                             <input type="file" required name="path" class="form-control">
                                         </div>
@@ -53,8 +53,9 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Review Type</label>
-                                            <select required name="type" id="" class="form-control">
-                                                <option value="Photo" selected>Photo</option>
+                                            <select required name="type" id="check_type" class="form-control">
+                                                <option value="Text" selected>Text</option>
+                                                <option value="Photo">Photo</option>
                                                 <option value="Video">Video</option>
                                             </select>
                                         </div>
@@ -91,7 +92,7 @@
                                                 <td>
                                                     @if ($item['type'] == 'Photo')
                                                         <img width="50" src="{{ $item['path'] }}">
-                                                    @else
+                                                    @elseif ($item['type'] == 'Video')
                                                         <video width="200" controls autoplay muted>
                                                             <source src="{{ $item['path'] }}" type="video/mp4">
                                                         </video>
@@ -118,4 +119,17 @@
                 </div>
             </div>
         </div>
+    @endsection
+    @section('scripts')
+        <script>
+            $('#check_type').on('change', (e) => {
+                if ($(e.target).val() == 'Text') {
+                    $('.file_upload_').addClass('d-none')
+                    $('[name="path"]').attr('required', !true)
+                } else {
+                    $('[name="path"]').attr('required', true)
+                    $('.file_upload_').removeClass('d-none')
+                }
+            })
+        </script>
     @endsection

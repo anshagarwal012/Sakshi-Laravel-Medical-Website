@@ -112,8 +112,9 @@ class Backend extends Controller
                     $data = $request->all();
                     $file = $request->file('image');
                     $fileName = time() . '_' . $file->getClientOriginalName();
-                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
-                    $data['image'] = $fileName;
+                    // (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                    $request->image->move(public_path('uploads/blog'), $fileName);
+                    $data['image'] = '/uploads/blog/'.$fileName;
                     $d = Blogs::create($data);
                     if ($d) {
                         return redirect()->back()->with('messages', "Blogs Inserted Successfully");
@@ -124,17 +125,22 @@ class Backend extends Controller
                     $data = $request->all();
                     $file = $request->file('image');
                     $fileName = time() . '_' . $file->getClientOriginalName();
-                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
-                    $data['image'] = $fileName;
+                    // (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                    $request->image->move(public_path('uploads/services'), $fileName);
+                    $data['image'] = '/uploads/services/'.$fileName;
                     Services::create($data);
                     return redirect()->back()->with('messages', "Services Inserted Successfully");
                     break;
                 case 'admin/review':
                     $data = $request->all();
                     $file = $request->file('path');
-                    $fileName = time() . '_' . $file->getClientOriginalName();
-                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
-                    $data['path'] = $fileName;
+                    if($file){
+                        $fileName = time() . '_' . $file->getClientOriginalName();
+                        // (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                        $request->path->move(public_path('uploads/review'), $fileName);
+                        $data['path'] = '/uploads/review/'.$fileName;
+                    }
+                    $data['path'] = '';
                     Reviews::create($data);
                     return redirect()->back()->with('messages', "Reviews Inserted Successfully");
                     break;
@@ -142,8 +148,9 @@ class Backend extends Controller
                     $data = $request->all();
                     $file = $request->file('images');
                     $fileName = time() . '_' . $file->getClientOriginalName();
-                    (Storage::disk('uploads')->put($fileName, $file->getContent()));
-                    $data['images'] = $fileName;
+                    // (Storage::disk('uploads')->put($fileName, $file->getContent()));
+                    $request->images->move(public_path('uploads/gallery'), $fileName);
+                    $data['images'] = '/uploads/gallery/'.$fileName;
                     Gallery::create($data);
                     return redirect()->back()->with('messages', "Gallery Inserted Successfully");
                     break;

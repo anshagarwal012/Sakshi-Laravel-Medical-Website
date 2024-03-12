@@ -13,13 +13,13 @@ class Blogs extends Model
     protected $fillable = ['name', 'category_id', 'image', 'desc', 'long_des', 'slug'];
     protected $with = ['category'];
 
-    public function getImageAttribute($value)
-    {
-        if ($value) {
-            return asset('storage/uploads/' . $value);
-        }
-        return null;
-    }
+    // public function getImageAttribute($value)
+    // {
+    //     if ($value) {
+    //         return asset('storage/uploads/' . $value);
+    //     }
+    //     return null;
+    // }
 
     public function getCreatedAtAttribute($value)
     {

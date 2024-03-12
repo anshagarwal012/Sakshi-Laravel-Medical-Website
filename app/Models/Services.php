@@ -10,11 +10,11 @@ class Services extends Model
     use HasFactory;
     protected $fillable = ['title', 'image', 'description'];
 
-    public function getImageAttribute($value)
-    {
-        if ($value) {
-            return asset('storage/uploads/' . $value);
-        }
-        return null;
-    }
+    // public function getImageAttribute($value)
+    // {
+    //     if ($value) {
+    //         return asset('storage/uploads/' . $value);
+    //     }
+    //     return null;
+    // }
 }

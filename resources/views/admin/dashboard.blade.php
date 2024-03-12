@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            {{-- <div class="col-lg-4">
                                 <div class="card bg-primary border-primary text-white-50">
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
                                         <h5 class="mb-4 text-white">Services</h5>
@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-4">
                                 <div class="card bg-success border-success text-white-50">
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center ">
@@ -58,8 +58,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
                             <div class="col-lg-4">
                                 <div class="card bg-danger border-danger text-white-50">
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center">
@@ -93,8 +91,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-3">
                             <div class="col-lg-4">
                                 <div class="card bg-danger border-danger text-white-50">
                                     <div class="card-body d-flex flex-column align-items-center justify-content-center">

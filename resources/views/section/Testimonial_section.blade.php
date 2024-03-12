@@ -7,30 +7,30 @@
             </p>
         </div>
         <div class="testimonial_carousel">
-            <div class="carousel_2col row" data-slick='{"arrows":false}'>
+            <div class="carousel_2col zoom-gallery row" data-slick='{"arrows":false}'>
                 @foreach ($data['testimonials'] as $item)
                     <div class="carousel_item col-6">
                         <div class="testimonial_item">
-                            @if ($item['type'] == 'Photo')
-                                <div class="blog_image">
-                                    <a class="blog_image_wrap">
-                                        <img src="{{ $item['path'] }}" alt="handle with ease">
-                                    </a>
-                                </div>
-                            @else
-                                <div class="blog_image d-flex justify-content-center">
-                                    <a class="blog_image_wrap">
-                                        <video width="450" controls autoplay muted>
-                                            <source src="{{ $item['path'] }}" type="video/mp4">
-                                        </video>
-                                    </a>
-                                </div>
-                            @endif
                             <ul class="rating_star unordered_list">
                                 {!! str_repeat('<li><i class="fa-solid fa-star"></i></li>', $item['stars']) !!}
                                 {!! str_repeat('<li><i class="fa-solid fa-star empty"></i></li>', 5 - $item['stars']) !!}
                             </ul>
                             <div class="author_box">
+                                @if ($item['type'] == 'Photo')
+                                    <div class="author_box_image">
+                                        <a class="popup_image" href="{{ $item['path'] }}">
+                                            <img src="{{ $item['path'] }}" style="width: 150px" alt="handle with ease">
+                                        </a>
+                                    </div>
+                                @elseif($item['type'] == 'Video')
+                                    <div class="author_box_image">
+                                        <a class="popup_video" href="{{ $item['path'] }}">
+                                            <video width="150" controls autoplay muted>
+                                                <source src="{{ $item['path'] }}" type="video/mp4">
+                                            </video>
+                                        </a>
+                                    </div>
+                                @endif
                                 <div class="author_box_content">
                                     <h3 class="author_box_name">{{ $item['title'] }}</h3>
                                     <span class="author_box_designation">Patient</span>

@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="image_widget">
-                    <img src="assets/images/about/about_image_11-min.jpg" alt="Handle with Ease">
+                    <img src="assets/images/about/book page.jpg" alt="Handle with Ease">
                     <div class="image_shape bg_secondary_light"></div>
                 </div>
             </div>

@@ -19,10 +19,7 @@ class Routing extends Controller
     public function root()
     {
         $data['services'] = $this->services();
-        $data['faqs'] = [
-            'title' => 'The most popular questions to discuss Physiotherapy',
-            'faqs' => [['question' => 'What is physiotherapy?', 'answer' => 'Physiotherapy, also known as physical therapy, is a healthcare profession focused on assessing, diagnosing, and treating musculoskeletal and neurological conditions. It involves a range of techniques such as manual therapy, exercise prescription, and modalities like ultrasound and electrical stimulation to promote recovery and improve function.'], ['question' => 'What conditions can physiotherapy treat?', 'answer' => 'Physiotherapy can address a wide range of conditions including sports injuries, back and neck pain, arthritis, stroke rehabilitation, neurological disorders, post-surgical recovery, and chronic pain conditions. It is also effective in managing conditions like asthma, incontinence, and workplace injuries.'], ['question' => 'What should I expect during a physiotherapy session?', 'answer' => 'During your initial session, the physiotherapist will conduct a thorough assessment to understand your condition, medical history, and goals. They will then develop a personalized treatment plan which may include manual therapy, exercises, education, and modalities as needed. Subsequent sessions will focus on implementing and progressing the treatment plan.'], ['question' => 'How many physiotherapy sessions will I need?', 'answer' => 'The number of sessions required varies depending on the nature and severity of your condition, as well as your individual goals. Your physiotherapist will discuss this with you during your initial assessment and regularly review your progress to adjust the treatment plan as needed.'], ['question' => 'Is physiotherapy painful?', 'answer' => 'Physiotherapy should not be painful, although you may experience some discomfort during certain exercises or manual therapy techniques. Your physiotherapist will work within your tolerance level and communicate with you to ensure that you are comfortable throughout the session.']],
-        ];
+        $data['faqs'] = $this->faqs();
         $data['testimonials'] = $this->testimonials();
         $data['blogs'] = $this->blogs(3);
 
@@ -37,7 +34,7 @@ class Routing extends Controller
             switch ($request->path()) {
                 case 'about':
                     $data['services'] = $this->services();
-                    $data['gallery'] =  $this->gallery();
+                    $data['gallery'] =  $this->gallery(3);
                     break;
                 case 'Our_Service':
                     $data['services'] = $this->services();
@@ -91,10 +88,18 @@ class Routing extends Controller
     }
     public function gallery($limit = 0)
     {
+        if ($limit) return Gallery::take($limit)->get();
         return Gallery::get();
     }
     public function testimonials($limit = 0)
     {
         return Reviews::get();
+    }
+    public function faqs($limit = 0)
+    {
+        return [
+            'title' => 'The most popular questions to discuss Physiotherapy',
+            'faqs' => Faqs::get()
+        ];
     }
 }

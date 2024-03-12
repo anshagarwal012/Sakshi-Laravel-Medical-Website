@@ -28,12 +28,12 @@
                                 <span data-key="t-dashboards">Dashboards</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link" href="/admin/category" id="topnav-dashboard" role="button">
                                 <i class="bx bx-file-find icon nav-icon"></i>
                                 <span data-key="t-dashboards">Category</span>
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="/admin/services" id="topnav-dashboard" role="button">
                                 <i class="bx bx-layer icon nav-icon"></i>
