@@ -14,6 +14,7 @@ use App\Models\booking;
 use App\Models\Contactus;
 use App\Models\Gallery;
 use App\Models\Reviews;
+use App\Models\Assessment;
 
 class Backend extends Controller
 {
@@ -204,6 +205,16 @@ class Backend extends Controller
         return [
             'status' => 1,
             'message' => 'Thanks for contacting us :)'
+        ];
+    }
+    public function assessment(Request $request)
+    {
+        $data = $request->all();
+        $final = ['form_data' => json_encode($data)];
+        Assessment::create($final);
+        return [
+            'status' => 1,
+            'message' => 'Thanks for Submitting Form :)'
         ];
     }
     public function booking(Request $request)

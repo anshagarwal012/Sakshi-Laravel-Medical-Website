@@ -1,7 +1,7 @@
 <header class="site_header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-3 col-5">
+            <div class="col-lg-2 col-5">
                 <div class="site_logo">
                     <a class="site_link" href="/">
                         <img src="/assets/images/site_logo/company.png" alt="handle With Ease" width="213"
@@ -9,9 +9,9 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 col-2">
+            <div class="col-lg-7 col-2">
                 <nav class="main_menu navbar navbar-expand-lg">
-                    <div class="main_menu_inner collapse navbar-collapse justify-content-center"
+                    <div class="main_menu_inner text-center collapse navbar-collapse justify-content-center"
                         id="main_menu_dropdown">
                         {{-- {{ dd(request()->path()) }} --}}
                         <ul class="main_menu_list unordered_list" style="flex-wrap: nowrap">
@@ -32,6 +32,9 @@
                             </li>
                             <li class="{{ request()->path() == 'blogs' ? 'active' : '' }}">
                                 <a class="nav-link" href="/blogs">Blog</a>
+                            </li>
+                            <li class="{{ request()->path() == 'assessment-form' ? 'active' : '' }}">
+                                <a class="nav-link" href="/assessment-form">Assessment Form</a>
                             </li>
                             <li class="{{ request()->path() == 'contact' ? 'active' : '' }}">
                                 <a class="nav-link" href="/contact">Contact</a>
