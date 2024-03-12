@@ -19,7 +19,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <a class="gallery_item">
                             <video controls autoplay muted>
-                                <source src="{{ '/storage/uploads/' . $dataItem['images'] }}" type="video/mp4">
+                                <source src="{{ 'storage/uploads/' . $dataItem['images'] }}" type="video/mp4">
                             </video>
                         </a>
                     </div>

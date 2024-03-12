@@ -67,10 +67,10 @@
                                                 <td>
                                                     @if ($item['type'] == 'Photo')
                                                         <img width="50"
-                                                            src=" {{ '/storage/uploads/' . $item['images'] }}">
+                                                            src=" {{ 'storage/uploads/' . $item['images'] }}">
                                                     @else
                                                         <video width="200" controls autoplay muted loop>
-                                                            <source src="{{ '/storage/uploads/' . $item['images'] }}"
+                                                            <source src="{{ 'storage/uploads/' . $item['images'] }}"
                                                                 type="video/mp4">
                                                         </video>
                                                     @endif
