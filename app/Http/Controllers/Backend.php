@@ -115,7 +115,7 @@ class Backend extends Controller
                     $fileName = time() . '_' . $file->getClientOriginalName();
                     // (Storage::disk('uploads')->put($fileName, $file->getContent()));
                     $request->image->move(public_path('uploads/blog'), $fileName);
-                    $data['image'] = '/uploads/blog/'.$fileName;
+                    $data['image'] = '/uploads/blog/' . $fileName;
                     $d = Blogs::create($data);
                     if ($d) {
                         return redirect()->back()->with('messages', "Blogs Inserted Successfully");
@@ -128,18 +128,18 @@ class Backend extends Controller
                     $fileName = time() . '_' . $file->getClientOriginalName();
                     // (Storage::disk('uploads')->put($fileName, $file->getContent()));
                     $request->image->move(public_path('uploads/services'), $fileName);
-                    $data['image'] = '/uploads/services/'.$fileName;
+                    $data['image'] = '/uploads/services/' . $fileName;
                     Services::create($data);
                     return redirect()->back()->with('messages', "Services Inserted Successfully");
                     break;
                 case 'admin/review':
                     $data = $request->all();
                     $file = $request->file('path');
-                    if($file){
+                    if ($file) {
                         $fileName = time() . '_' . $file->getClientOriginalName();
                         // (Storage::disk('uploads')->put($fileName, $file->getContent()));
                         $request->path->move(public_path('uploads/review'), $fileName);
-                        $data['path'] = '/uploads/review/'.$fileName;
+                        $data['path'] = '/uploads/review/' . $fileName;
                     }
                     $data['path'] = '';
                     Reviews::create($data);
@@ -151,7 +151,7 @@ class Backend extends Controller
                     $fileName = time() . '_' . $file->getClientOriginalName();
                     // (Storage::disk('uploads')->put($fileName, $file->getContent()));
                     $request->images->move(public_path('uploads/gallery'), $fileName);
-                    $data['images'] = '/uploads/gallery/'.$fileName;
+                    $data['images'] = '/uploads/gallery/' . $fileName;
                     Gallery::create($data);
                     return redirect()->back()->with('messages', "Gallery Inserted Successfully");
                     break;

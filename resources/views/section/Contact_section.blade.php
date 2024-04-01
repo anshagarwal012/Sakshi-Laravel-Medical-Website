@@ -35,10 +35,17 @@
                                         placeholder="Phone number">
                                 </div>
                             </div>
+                            <div class="col-md-10">
+                                <div class="form-group">
+                                    <label for="input_phone">Email</label>
+                                    <input id="input_phone" class="form-control" type="mail" name="email"
+                                        placeholder="Email">
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="form-group mb-4">
-                                    <label for="input_message">Message</label>
-                                    <textarea id="input_message" class="form-control" name="Message" placeholder="Your message"></textarea>
+                                    <label for="input_message">Reason For Visit</label>
+                                    <textarea id="input_message" class="form-control" name="Message"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary submit-contact">
                                     <span class="btn_text" data-text="Contact Us">

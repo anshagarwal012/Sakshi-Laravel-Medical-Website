@@ -48,7 +48,7 @@ class Routing extends Controller
                     break;
                 case 'blogs':
                     $data['blogs'] = $this->blogs();
-                    $data['blogs'] = $this->recommended();
+                    $data['blogs_recomended'] = $this->recommended();
                     $data['Category'] = $this->Category();
                     break;
                 case 'book':

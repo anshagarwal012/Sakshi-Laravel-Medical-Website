@@ -24,7 +24,8 @@
                                             href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">{{ $cat['name'] }}</a>
                                     </h3>
                                     <p>{{ $cat['desc'] }}<br>
-                                        <a class="btn-link" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
+                                        <a class="btn-link"
+                                            href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
                                             <span class="btn_text">Read More</span>
                                             <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                                         </a>
@@ -80,7 +81,7 @@
                             <span class="title_text">Recommended Articles</span>
                         </h3>
                         <ul class="reecommended_post_group unordered_list_block">
-                            @foreach ($data['blogs'] as $cat)
+                            @foreach ($data['blogs_recomended'] as $cat)
                                 <li>
                                     <div class="blog_item_small">
                                         <div class="blog_image">
