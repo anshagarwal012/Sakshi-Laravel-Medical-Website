@@ -186,8 +186,6 @@ class Backend extends Controller
                 Contactus::where('id', $request->id)->delete();
             case 'admin/Booking':
                 booking::where('id', $request->id)->delete();
-            case 'admin/Assement_form':
-                booking::where('id', $request->id)->delete();
         }
         return back()->with('messages', "Date Deleted successfully");
     }
