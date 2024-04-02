@@ -212,10 +212,16 @@
             }
         }
 
-        var whatsappURL = 'https://wa.me/+919696084837?text=' + encodeURIComponent(whatsappMessage.trim());
+        var whatsappURL = 'https://wa.me/+918299626136?text=' + encodeURIComponent(whatsappMessage.trim()
+            .toProperCase());
+        window.open(whatsappURL)
+        // window.location.href = whatsappURL;
 
-        window.location.href = whatsappURL;
-
-        return false;
+        // return false;
+    };
+    String.prototype.toProperCase = function() {
+        return this.replace(/\w\S*/g, function(txt) {
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        });
     };
 </script>

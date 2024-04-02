@@ -62,6 +62,10 @@ class Backend extends Controller
                     case 'admin/Booking':
                         $data = booking::get();
                         break;
+                    case 'admin/Assement':
+                        $data = $this->assessment_data();
+                        // dd($data);
+                        break;
                     case 'admin/dashboard':
                         $data['Blogs'] = Blogs::count();
                         $data['Category'] = Category::count();
@@ -70,7 +74,8 @@ class Backend extends Controller
                         $data['Reviews'] = Reviews::count();
                         $data['Contact'] = Contactus::count();
                         $data['booking'] = booking::count();
-                        $data['Gallery'] = booking::count();
+                        $data['Gallery'] = Gallery::count();
+                        $data['Assessment'] = Assessment::count();
                         break;
                 }
                 return view($request->path(), ['data' => $data]);
@@ -181,6 +186,8 @@ class Backend extends Controller
                 Contactus::where('id', $request->id)->delete();
             case 'admin/Booking':
                 booking::where('id', $request->id)->delete();
+            case 'admin/Assement_form':
+                booking::where('id', $request->id)->delete();
         }
         return back()->with('messages', "Date Deleted successfully");
     }
@@ -210,6 +217,7 @@ class Backend extends Controller
     public function assessment(Request $request)
     {
         $data = $request->all();
+        unset($data['_token']);
         $final = ['form_data' => json_encode($data)];
         Assessment::create($final);
         return [
@@ -225,5 +233,17 @@ class Backend extends Controller
             'status' => 1,
             'message' => 'Thanks for contacting us :)'
         ];
+    }
+    public function assessment_data()
+    {
+        $results = Assessment::select('form_data', 'id')->get();
+        $data = $results->map(function ($item) {
+            $da = json_decode($item->form_data, true);
+            return [
+                'id' => $item->id,
+                'data' => $da,
+            ];
+        });
+        return $data->toArray();
     }
 }

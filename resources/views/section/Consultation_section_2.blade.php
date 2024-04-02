@@ -13,7 +13,7 @@
                         Take Care of Your Health
                     </h2>
                 </div>
-                <form action="/api/booking" method="POST" class="form-group">
+                <form action="/api/booking" method="POST" class="form-group" id="whatsappForm">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="select_therapy">Section</label>
+                                <label for="select_therapy">Services</label>
                                 <select id="select_therapy" class="form-select" aria-label="Therapy Select Options"
                                     name="section">
                                     @foreach ($data['services'] as $Services)
@@ -44,7 +44,8 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="input_calendar">Calendar</label>
-                                <input id="input_calendar" class="form-control" type="date" name="calendar">
+                                <input id="input_calendar" class="form-control" type="date" min="<?php echo date('Y-m-d'); ?>"
+                                    name="calendar">
                             </div>
                         </div>
                     </div>
@@ -74,6 +75,7 @@
                     $d = serialize_to_object($d, $)
                     $.post('/api/booking', $d, function(r) {
                         alert(r.message)
+                        whatsapp();
                         location.reload()
                         // console.log(r);
                     })
@@ -90,5 +92,29 @@
             });
             return data;
         }
+
+        function whatsapp() {
+            var formData = new FormData(document.getElementById("whatsappForm"));
+            var whatsappMessage = '';
+
+            for (var pair of formData.entries()) {
+                if (pair[0] !== "_token") {
+                    if (pair[0] == 'section') {
+                        whatsappMessage += '*Services :* ' + pair[1] + '\n';
+                    } else {
+                        whatsappMessage += '*' + pair[0].replace(/_/g, ' ') + ':* ' + pair[1] + '\n';
+                    }
+                }
+            }
+
+            var whatsappURL = 'https://wa.me/+918299626136?text=' + encodeURIComponent(whatsappMessage.trim()
+            .toProperCase());
+            window.open(whatsappURL)
+        }
+        String.prototype.toProperCase = function() {
+            return this.replace(/\w\S*/g, function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+        };
     </script>
 @endsection

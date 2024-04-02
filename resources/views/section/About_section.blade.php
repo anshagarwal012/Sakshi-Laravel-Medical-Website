@@ -16,7 +16,7 @@
                 <div class="about_content">
                     <div class="section_heading mb-4">
                         <h2 class="section_heading_text">
-                            <mark>Dr.Sakshi Chaurasia</mark> — Licensed physical therapist Physiotherapy
+                            <mark>Dr.Sakshi Chaurasia</mark> — Licensed Physical Therapist
                         </h2>
                         <p class="section_heading_description mb-0 ">
                             Dr. Sakshi chaurasia, A leading expert in neurological and pediatric physiotherapy, Dr.
