@@ -13,7 +13,6 @@
                 <nav class="main_menu navbar navbar-expand-lg">
                     <div class="main_menu_inner text-center collapse navbar-collapse justify-content-center"
                         id="main_menu_dropdown">
-                        {{-- {{ dd(request()->path()) }} --}}
                         <ul class="main_menu_list unordered_list" style="flex-wrap: nowrap">
                             <li class="{{ request()->path() == '/' ? 'active' : '' }}">
                                 <a class="nav-link" href="/">Home</a>
@@ -39,7 +38,21 @@
                             <li class="{{ request()->path() == 'contact' ? 'active' : '' }}">
                                 <a class="nav-link" href="/contact">Contact</a>
                             </li>
-
+                            <!-- Language Dropdown -->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Language
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#" onclick="showOriginal('en')">English</a>
+                                    <a class="dropdown-item" href="#" onclick="changeLanguage('hi')">Hindi</a>
+                                    <!-- Add more languages as needed -->
+                                </div>
+                            </li>
+                            <!-- End Language Dropdown -->
+                            <!-- Show Original Button -->
+                            <!-- End Show Original Button -->
                         </ul>
                     </div>
                 </nav>
@@ -54,9 +67,6 @@
                     </li>
                     <li>
                         <a class="btn_hotline" href="/book">
-                            <!--span class="btn_icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </span-->
                             <span class="btn btn-primary btn-sm py-2">Book Appointment</span>
                         </a>
                     </li>
@@ -64,4 +74,5 @@
             </div>
         </div>
     </div>
+    <div id="translatedContent" class="d-none"></div>
 </header>

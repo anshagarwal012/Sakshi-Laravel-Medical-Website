@@ -12,6 +12,7 @@
                                 <div class="form-group">
                                     <label for="name">Name:</label>
                                     <input type="text" class="form-control" id="name" name="Name"
+                                        onkeydown="return /[a-zA-Z]/i.test(event.key)"
                                         placeholder="Enter your full name" required>
                                 </div>
                                 <div class="form-group">
@@ -22,7 +23,8 @@
                                 <div class="form-group">
                                     <label for="contact">Contact Number:</label>
                                     <input type="tel" class="form-control" id="contact" name="Contact_Number"
-                                        placeholder="Enter your contact number" required>
+                                        placeholder="Enter your contact number" required maxlength="10"
+                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>

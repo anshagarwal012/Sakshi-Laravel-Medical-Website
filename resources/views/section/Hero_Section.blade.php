@@ -37,7 +37,7 @@
                         <li>
                             <div class="counter_item">
                                 <div class="counter_value mb-0">
-                                    <span class="odometer" data-count="5">0</span>
+                                    <span class="odometer" data-count="3">0</span>
                                     <span>+</span>
                                 </div>
                                 <hr>
@@ -49,12 +49,12 @@
                         <li>
                             <div class="counter_item">
                                 <div class="counter_value mb-0">
-                                    <span class="odometer" data-count="740">0</span>
+                                    <span class="odometer" data-count="100">0</span>
                                     <span>+</span>
                                 </div>
                                 <hr>
                                 <p class="counter_description mb-0">
-                                    Patients received help this year
+                                    Happy Patient help this year
                                 </p>
                             </div>
                         </li>

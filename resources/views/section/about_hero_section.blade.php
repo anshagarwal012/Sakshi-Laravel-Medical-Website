@@ -16,7 +16,7 @@
                 <div class="about_content">
                     <div class="section_heading mb-4">
                         <h2 class="section_heading_text">
-                            <mark>Dr.Sakshi Chaurasia </mark> — Licensed Mental Health Counselor, Psychotherapist
+                            <mark>Dr.Sakshi Chaurasia (PT)</mark> — Licensed Mental Health Counselor, Psychotherapist
                         </h2>
                         <p class="section_heading_description mb-0 ">
                             A leading expert in neurological and pediatric physiotherapy ,Dr Sakshi is dedicated to
