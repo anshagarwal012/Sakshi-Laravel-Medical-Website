@@ -17,4 +17,7 @@
     i.fa-solid.fa-star.empty {
     color : grey;
 }
+.skiptranslate {
+    display: none;
+}
 </style>

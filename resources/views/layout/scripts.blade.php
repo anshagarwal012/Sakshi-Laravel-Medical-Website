@@ -20,44 +20,38 @@
 <!-- Custom - Jquery Include -->
 <script src="{{ asset('/assets/js/main.js') }}"></script>
 
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- Include Google Translate JavaScript library -->
 <script>
+    const sleep = m => new Promise(r => setTimeout(r, m))
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
             pageLanguage: 'en',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
             autoDisplay: false
         }, 'translatedContent');
     }
 
     function changeLanguage(lang) {
-        setTimeout(function() {
-            document.querySelector('.goog-te-combo').value = 'hi'; // Set target language to Hindi
-            document.querySelector('.goog-te-combo').dispatchEvent(new Event('change'));
-            // Update content language
-            updateContentLanguage(lang);
-        }, 1000);
+        document.querySelector('.goog-te-combo').value = lang;
+        document.querySelector('.goog-te-combo').dispatchEvent(new Event('change'));
     }
-
-    function showOriginal() {
-        var elementsToTranslate = document.querySelectorAll('[data-lang]');
-        elementsToTranslate.forEach(function(element) {
-            element.textContent = element.dataset.lang.en;
-        });
-    }
-
-    function updateContentLanguage(lang) {
-        // Implement logic to update content language based on the selected language
-        var elementsToTranslate = document.querySelectorAll('[data-lang]');
-        elementsToTranslate.forEach(function(element) {
-            if (lang === 'hi') {
-                element.textContent = element.dataset.lang.hi; // Display Hindi content
-            } else {
-                element.textContent = element.dataset.lang.en; // Display English content
-            }
-        });
-    }
+    $(document).on('click','.language_switcher', function() {
+        vall = $(this).data('lan');
+        var l = "";
+        if (vall == 'hi') {
+            l = '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'en\')">English</a>';
+        } else {
+            l = '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
+        }
+        sleep(2)
+        $('.main_language_switcher').html(l)
+    })
+    $('.main_language_switcher').html('<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>');
+    $(function(){
+        setTimeout(() => {
+            changeLanguage('en');
+        }, 4000);
+    })
 </script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 @yield('scripts')

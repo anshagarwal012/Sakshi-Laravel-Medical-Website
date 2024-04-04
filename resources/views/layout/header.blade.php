@@ -38,8 +38,9 @@
                             <li class="{{ request()->path() == 'contact' ? 'active' : '' }}">
                                 <a class="nav-link" href="/contact">Contact</a>
                             </li>
+                            <li class="main_language_switcher"></li>
                             <!-- Language Dropdown -->
-                            <li class="dropdown">
+                            {{-- <li class="dropdown">
                                 <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Language
@@ -49,7 +50,7 @@
                                     <a class="dropdown-item" href="#" onclick="changeLanguage('hi')">Hindi</a>
                                     <!-- Add more languages as needed -->
                                 </div>
-                            </li>
+                            </li> --}}
                             <!-- End Language Dropdown -->
                             <!-- Show Original Button -->
                             <!-- End Show Original Button -->
