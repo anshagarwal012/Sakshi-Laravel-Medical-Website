@@ -41,11 +41,9 @@
         if (vall == 'hi') {
             l = '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'en\')">English</a>';
         } else {
-            l = '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
+            l = '<a class="nav-link language_switcher" data-lan="hi" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
         }
-        setTimeout(() => {
-            $('.main_language_switcher').html(l)
-        }, 2000);
+        $('.main_language_switcher').html(l)
     })
     $('.main_language_switcher').html('<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>');
     $(function(){
