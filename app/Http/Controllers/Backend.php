@@ -172,20 +172,28 @@ class Backend extends Controller
         switch ($request->path()) {
             case 'admin/services':
                 Services::where('id', $request->id)->delete();
+                break;
             case 'admin/category':
                 Category::where('id', $request->id)->delete();
+                break;
             case 'admin/faqs':
                 Faqs::where('id', $request->id)->delete();
+                break;
             case 'admin/blogs':
                 Blogs::where('id', $request->id)->delete();
+                break;
             case 'admin/review':
                 Reviews::where('id', $request->id)->delete();
+                break;
             case 'admin/gallery':
                 Gallery::where('id', $request->id)->delete();
+                break;
             case 'admin/contact':
                 Contactus::where('id', $request->id)->delete();
+                break;
             case 'admin/Booking':
                 booking::where('id', $request->id)->delete();
+                break;
         }
         return back()->with('messages', "Date Deleted successfully");
     }
