@@ -43,8 +43,9 @@
         } else {
             l = '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
         }
-        sleep(2)
-        $('.main_language_switcher').html(l)
+        setTimeout(() => {
+            $('.main_language_switcher').html(l)
+        }, 2000);
     })
     $('.main_language_switcher').html('<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>');
     $(function(){
