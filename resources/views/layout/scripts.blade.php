@@ -41,10 +41,10 @@
         var l = "";
         if (vall == 'hi') {
             l =
-            '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'en\')">English</a>';
+                '<a class="nav-link language_switcher" data-lan="en" href="#!" onclick="changeLanguage(\'en\')">English</a>';
         } else {
             l =
-            '<a class="nav-link language_switcher" data-lan="hi" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
+                '<a class="nav-link language_switcher" data-lan="hi" href="#!" onclick="changeLanguage(\'hi\')">Hindi</a>';
         }
         $('.main_language_switcher').html(l)
     })
@@ -55,6 +55,11 @@
             changeLanguage('en');
         }, 4000);
     })
+    setInterval(() => {
+        if ($('.main_language_switcher a').html().includes('Nope')) {
+            $('.main_language_switcher a').html('Hindi')
+        }
+    }, 1000);
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 @yield('scripts')
