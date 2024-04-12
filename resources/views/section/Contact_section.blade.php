@@ -1,4 +1,4 @@
-<section class="contact_section section_space_lg">
+<section class="contact_section section_space_sm">
     <div class="container">
         <div class="conatiner_box">
             <div class="section_heading mb-4">
@@ -35,17 +35,32 @@
                                         placeholder="Phone number">
                                 </div>
                             </div>
-                            <div class="col-md-10">
-                                <div class="form-group">
-                                    <label for="input_phone">Email</label>
-                                    <input id="input_phone" class="form-control" type="mail" name="email"
-                                        placeholder="Email">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="input_phone">Email</label>
+                                        <input id="input_phone" class="form-control" type="mail" name="email"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="select_therapy">Services</label>
+                                        <select id="select_therapy" class="form-select"
+                                            aria-label="Therapy Select Options" name="section">
+                                            @foreach ($data['services'] as $Services)
+                                                <option value="{{ $Services['title'] }}">{{ $Services['title'] }}
+                                                </option>
+                                            @endforeach
+                                            <option value="others" onclick="">others</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12" id="others">
                                 <div class="form-group mb-4">
                                     <label for="input_message">Reason For Visit</label>
-                                    <textarea id="input_message" class="form-control" name="Message"></textarea>
+                                    <textarea id="input_message"class="form-control" name="Message"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary submit-contact">
                                     <span class="btn_text" data-text="Contact Us">
@@ -137,5 +152,16 @@
             });
             return data;
         }
+        $(document).ready(function() {
+            $('#others').hide();
+
+            $('#select_therapy').change(function() {
+                if ($(this).val() == 'others') {
+                    $('#others').show();
+                } else {
+                    $('#others').hide();
+                }
+            });
+        });
     </script>
 @endsection

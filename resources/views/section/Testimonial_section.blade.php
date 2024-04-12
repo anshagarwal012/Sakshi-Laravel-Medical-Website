@@ -1,5 +1,5 @@
-<section class="testimonial_section section_space_lg">
-    <div class="container">
+<section class="testimonial_section section_space_sm">
+    <div class="container mt-">
         <div class="section_heading text-center">
             <h2 class="section_heading_text">What Patients Say</h2>
             <p class="section_heading_description mb-0">
