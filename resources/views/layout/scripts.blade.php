@@ -59,7 +59,7 @@
         if ($('.main_language_switcher a').html().includes('Nope')) {
             $('.main_language_switcher a').html('Hindi')
         }
-    }, 1000);
+    }, 2000);
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 @yield('scripts')
