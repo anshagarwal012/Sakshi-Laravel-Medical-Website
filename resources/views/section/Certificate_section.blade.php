@@ -9,38 +9,38 @@
         <div class="certificates_carousel row zoom-gallery" data-slick='{"arrows": false}'>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_1-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_1-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c1.jpg">
+                    <img src="assets/images/certificate/c1.jpg" alt="Handle with Ease">
                 </a>
             </div>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_2-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_2-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c2.jpg">
+                    <img src="assets/images/certificate/c2.jpg" alt="Handle with Ease">
                 </a>
             </div>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_3-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_3-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c3.jpg">
+                    <img src="assets/images/certificate/c3.jpg" alt="Handle with Ease">
                 </a>
             </div>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_1-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_1-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c4.jpg">
+                    <img src="assets/images/certificate/c4.jpg" alt="Handle with Ease">
                 </a>
             </div>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_2-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_2-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c5.jpg">
+                    <img src="assets/images/certificate/c5.jpg" alt="Handle with Ease">
                 </a>
             </div>
             <div class="col- carousel_item">
                 <a class="certificate_image popup_image" data-cursor-text="Scroll"
-                    href="assets/images/certificate/certificate_image_3-min.jpg">
-                    <img src="assets/images/certificate/certificate_image_3-min.jpg" alt="Handle with Ease">
+                    href="assets/images/certificate/c6.jpg">
+                    <img src="assets/images/certificate/c6.jpg" alt="Handle with Ease">
                 </a>
             </div>
         </div>

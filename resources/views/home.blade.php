@@ -12,5 +12,6 @@
     @include('section.gallery')
     @include('section.FAQ_section')
     @include('section.Testimonial_section')
+    @include('section.video_reviews')
     @include('section.Contact_section')
 @endsection

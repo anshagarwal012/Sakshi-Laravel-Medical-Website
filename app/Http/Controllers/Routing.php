@@ -54,6 +54,9 @@ class Routing extends Controller
                 case 'book':
                     $data['services'] = $this->services();
                     break;
+                case 'contact':
+                    $data['services'] = $this->services();
+                    break;
             }
             return view($request->path(), ['data' => $data]);
         } else {

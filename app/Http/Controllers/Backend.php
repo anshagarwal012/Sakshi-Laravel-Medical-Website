@@ -213,6 +213,7 @@ class Backend extends Controller
     }
     public function contact(Request $request)
     {
+
         $data = $request->all();
         Contactus::create($data);
         return [

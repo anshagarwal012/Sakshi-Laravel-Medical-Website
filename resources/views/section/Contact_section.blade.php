@@ -18,7 +18,7 @@
 
             <div class="row justify-content-lg-between">
                 <div class="col-lg-6 mb-lg-0 mb-4">
-                    <form action="/api/contact" method="POST" class="form-group">
+                    <form action="/api/contact" method="POST" class="form-group" id="whatsappForm">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
@@ -57,10 +57,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12" id="others">
-                                <div class="form-group mb-4">
+                            <div class="col-12">
+                                <div class="form-group mb-4" id="others">
                                     <label for="input_message">Reason For Visit</label>
-                                    <textarea id="input_message"class="form-control" name="Message"></textarea>
+                                    <textarea id="input_message"class="form-control" name="Message">&nbsp;</textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary submit-contact">
                                     <span class="btn_text" data-text="Contact Us">
@@ -128,13 +128,41 @@
 @section('scripts')
     <script>
         $(function() {
+
+            function customCLick() {
+                var formData = new FormData(document.getElementById("whatsappForm"));
+                var whatsappMessage = '';
+
+                for (var pair of formData.entries()) {
+                    if (pair[0] !== "_token") {
+                        whatsappMessage += '*' + pair[0].replace(/_/g, ' ') + ':* ' + pair[1] + '\n';
+                    }
+                }
+
+                console.log(whatsappMessage);
+
+                var whatsappURL = 'https://wa.me/+918127916695?text=' + encodeURIComponent(whatsappMessage.trim()
+                    .toProperCase());
+                window.open(whatsappURL)
+                // window.location.href = whatsappURL;
+
+                // return false;
+            }
+
             $('.submit-contact').on('click', function(e) {
                 e.preventDefault();
+                // $d = $('form').serializeArray()
+                // $d = serialize_to_object($d, $)
+                // console.log($d);
+
                 if ($('[name="Name"]').val() != '' && $('[name="PhoneNumber"]').val() != '' && $(
-                        '[name="Message"]').val() != '') {
+                        '[name="Message"]').val() != '' && $('[name="email"]').val() != '' && $(
+                        '[name="section"]').val() != '') {
                     $d = $('form').serializeArray()
                     $d = serialize_to_object($d, $)
+                    console.log($d);
                     $.post('/api/contact', $d, function(r) {
+                        customCLick();
                         alert(r.message)
                         location.reload()
                         // console.log(r);
@@ -163,5 +191,30 @@
                 }
             });
         });
+
+        // document.getElementById("whatsappForm").onsubmit = function() {
+        //     var formData = new FormData(document.getElementById("whatsappForm"));
+        //     var whatsappMessage = '';
+
+        //     for (var pair of formData.entries()) {
+        //         if (pair[0] !== "_token") {
+        //             whatsappMessage += '*' + pair[0].replace(/_/g, ' ') + ':* ' + pair[1] + '\n';
+        //         }
+        //     }
+
+        //     console.log(whatsappMessage);
+
+        //     var whatsappURL = 'https://wa.me/+918299626136?text=' + encodeURIComponent(whatsappMessage.trim()
+        //         .toProperCase());
+        //     window.open(whatsappURL)
+        //     // window.location.href = whatsappURL;
+
+        //     // return false;
+        // };
+        String.prototype.toProperCase = function() {
+            return this.replace(/\w\S*/g, function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+        };
     </script>
 @endsection

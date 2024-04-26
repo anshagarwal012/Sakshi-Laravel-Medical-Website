@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Contactus extends Model
 {
     use HasFactory;
-    protected $fillable = ['Name', 'PhoneNumber', 'Message'];
+    protected $fillable = ['Name', 'PhoneNumber', 'Message', 'email', 'section'];
 }
