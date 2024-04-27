@@ -7,7 +7,7 @@
             </p>
         </div>
         <div class="testimonial_carousel">
-            <div class="carousel_2col zoom-gallery row" data-slick='{"arrows":false}'>
+            <div class="zoom-gallery row" data-slick='{"arrows":false}'>
                 @foreach ($data['testimonials'] as $item)
                     <div class="carousel_item col-6">
                         <div class="testimonial_item">

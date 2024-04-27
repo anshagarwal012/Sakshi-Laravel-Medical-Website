@@ -1,7 +1,7 @@
 <section class="certificate_section section_space_lg pb-0">
     <div class="container">
         <div class="section_heading text-center">
-            <h2 class="section_heading_text">Video Testimonials</h2>
+            <h2 class="section_heading_text">Video Testimonial</h2>
             <p class="section_heading_description mb-0 ">
                 Our Clients
             </p>
@@ -32,4 +32,9 @@
             </div>
         </div>
     </div>
+    <style>
+        iframe {
+            border-radius: 15px;
+        }
+    </style>
 </section>
