@@ -132,21 +132,20 @@
             function customCLick() {
                 var formData = new FormData(document.getElementById("whatsappForm"));
                 var whatsappMessage = '';
-
+                // debugger;
                 for (var pair of formData.entries()) {
                     if (pair[0] !== "_token") {
+                        if (pair[0] === 'Message' && pair[1].trim() === "") {
+                            continue;
+                        }
                         whatsappMessage += '*' + pair[0].replace(/_/g, ' ') + ':* ' + pair[1] + '\n';
                     }
                 }
 
-                console.log(whatsappMessage);
-
-                var whatsappURL = 'https://wa.me/+918127916695?text=' + encodeURIComponent(whatsappMessage.trim()
+                var whatsappURL = 'https://wa.me/+918299626136?text=' + encodeURIComponent(whatsappMessage.trim()
                     .toProperCase());
                 window.open(whatsappURL)
                 // window.location.href = whatsappURL;
-
-                // return false;
             }
 
             $('.submit-contact').on('click', function(e) {
@@ -192,25 +191,6 @@
             });
         });
 
-        // document.getElementById("whatsappForm").onsubmit = function() {
-        //     var formData = new FormData(document.getElementById("whatsappForm"));
-        //     var whatsappMessage = '';
-
-        //     for (var pair of formData.entries()) {
-        //         if (pair[0] !== "_token") {
-        //             whatsappMessage += '*' + pair[0].replace(/_/g, ' ') + ':* ' + pair[1] + '\n';
-        //         }
-        //     }
-
-        //     console.log(whatsappMessage);
-
-        //     var whatsappURL = 'https://wa.me/+918299626136?text=' + encodeURIComponent(whatsappMessage.trim()
-        //         .toProperCase());
-        //     window.open(whatsappURL)
-        //     // window.location.href = whatsappURL;
-
-        //     // return false;
-        // };
         String.prototype.toProperCase = function() {
             return this.replace(/\w\S*/g, function(txt) {
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
