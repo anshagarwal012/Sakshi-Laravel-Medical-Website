@@ -8,12 +8,12 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="service_item">
                         <div class="item_icon">
-                            <img src="{{$dataItem['image']}}" alt="Handle with Ease">
+                            <img src="{{ $dataItem['image'] }}" alt="Handle with Ease" loading="lazy">
                         </div>
                         <div class="item_contact">
-                            <h3 class="item_title">{{$dataItem['title']}}</h3>
-                            <p>{{$dataItem['description']}}</p>
-                            <a class="btn-link" href="{{$dataItem['url']}}">
+                            <h3 class="item_title">{{ $dataItem['title'] }}</h3>
+                            <p>{{ $dataItem['description'] }}</p>
+                            <a class="btn-link" href="{{ $dataItem['url'] }}">
                                 <span class="btn_text">More Info</span>
                                 <span class="btn_icon"><i class="fa-solid fa-arrow-up-right"></i></span>
                             </a>
@@ -23,16 +23,16 @@
             @endforeach
         </div>
         @if ($services_button)
-        <div class="btn_wrap pb-0 text-center">
-            <a class="btn btn-primary" href="/Our_Service">
-                <span class="btn_text" data-text="All Services" href="/Our_Service">
-                    All Services
-                </span>
-                <span class="btn_icon">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </span>
-            </a>
-        </div>
+            <div class="btn_wrap pb-0 text-center">
+                <a class="btn btn-primary" href="/Our_Service">
+                    <span class="btn_text" data-text="All Services" href="/Our_Service">
+                        All Services
+                    </span>
+                    <span class="btn_icon">
+                        <i class="fa-solid fa-arrow-up-right"></i>
+                    </span>
+                </a>
+            </div>
         @endif
     </div>
 </section>

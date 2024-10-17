@@ -6,32 +6,32 @@
         <div class="zoom-gallery row justify-content-center">
             <div class="col-lg-4">
                 <a class="gallery_item popup_image" href="assets/images/post/p1.jpg">
-                    <img src="assets/images/post/p1.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p1.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <a class="gallery_item popup_image" href="assets/images/post/p2.jpg">
-                    <img src="assets/images/post/p2.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p2.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <a class="gallery_item popup_image" href="assets/images/post/p4.jpg">
-                    <img src="assets/images/post/p4.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p4.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <a class="gallery_item popup_image" href="assets/images/post/p5.jpg">
-                    <img src="assets/images/post/p5.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p5.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <a class="gallery_item popup_image" href="assets/images/post/p6.jpg">
-                    <img src="assets/images/post/p6.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p6.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <a class="gallery_item popup_image" href="assets/images/post/p7.jpg">
-                    <img src="assets/images/post/p7.jpg" alt="hand with ease">
+                    <img src="assets/images/post/p7.jpg" loading="lazy" alt="hand with ease">
                 </a>
             </div>
         </div>

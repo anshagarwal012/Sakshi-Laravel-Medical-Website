@@ -19,7 +19,8 @@
                                 @if ($item['type'] == 'Photo')
                                     <div class="author_box_image">
                                         <a class="popup_image" href="{{ $item['path'] }}">
-                                            <img src="{{ $item['path'] }}" style="width: 150px" alt="handle with ease">
+                                            <img src="{{ $item['path'] }}" style="width: 150px" loading="lazy"
+                                                alt="handle with ease">
                                         </a>
                                     </div>
                                 @elseif($item['type'] == 'Video')

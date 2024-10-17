@@ -75,13 +75,13 @@
             </div>
             <div class="col-lg-6">
                 <div class="hero_image_wrap">
-                    <img src="assets\images\hero\hero profile pic.jpg" alt="Hand with Ease">
+                    <img src="assets\images\hero\hero profile pic.jpg" alt="Hand with Ease" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
     <div class="decoration_item shape_blur_shadow"></div>
     <div class="decoration_item shape_leaf">
-        <img src="assets/images/shapes/shape_leaf_left_top.svg" alt="Shape Leaf - Handle With Ease">
+        <img src="assets/images/shapes/shape_leaf_left_top.svg" alt="Shape Leaf - Handle With Ease" loading="lazy">
     </div>
 </section>

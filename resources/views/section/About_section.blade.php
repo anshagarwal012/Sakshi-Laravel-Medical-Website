@@ -3,7 +3,7 @@
         <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 order-lg-last">
                 <div class="image_widget">
-                    <img src="assets/images/about/g_1.jpg" alt="Handle With Ease">
+                    <img src="assets/images/about/g_1.jpg" alt="Handle With Ease" loading="lazy">
                     <div class="image_shape bg_primary_light"></div>
                     <div class="about_video_icon">
                         <!--a class="video_play_btn popup_video" href="">

@@ -24,7 +24,7 @@
                     <div class="blog_item">
                         <div class="blog_image">
                             <a class="blog_image_wrap" href="/blogs/{{ $cat['id'] }}/{{ \Str::slug($cat['name']) }}">
-                                <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}">
+                                <img src="{{ $cat['image'] }}" alt="{{ $cat['name'] }}" loading="lazy">
                             </a>
                         </div>
                         <div class="blog_content">
