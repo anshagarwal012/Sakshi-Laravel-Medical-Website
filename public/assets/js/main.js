@@ -29,7 +29,7 @@
 
   // Sticky Header - Start
   // --------------------------------------------------
-      $('.site_header').addClass("sticky")
+      // $('.site_header').addClass("sticky")
   // $(window).on('scroll', function () {
   //   if ($(this).scrollTop() > 0) {
   //     $('.site_header').addClass("sticky")
@@ -64,13 +64,7 @@
 
   // Odometer Counter - Start
   // --------------------------------------------------
-  jQuery('.odometer').appear(function (e) {
-    var odo = jQuery(".odometer");
-    odo.each(function () {
-      var countNumber = jQuery(this).attr("data-count");
-      jQuery(this).html(countNumber);
-    });
-  });
+  
   // Odometer Counter - End
   // --------------------------------------------------
 

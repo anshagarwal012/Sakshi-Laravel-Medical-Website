@@ -3,6 +3,17 @@
 <script src="{{ asset('/assets/js/popper.min.js') }}"></script>
 <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('/assets/js/bootstrap-dropdown-ml-hack.min.js') }}"></script>
+<script>
+    $('.site_header').addClass("sticky")
+
+    jQuery('.odometer').appear(function(e) {
+        var odo = jQuery(".odometer");
+        odo.each(function() {
+            var countNumber = jQuery(this).attr("data-count");
+            jQuery(this).html(countNumber);
+        });
+    });
+</script>
 
 <!-- animation - jquery include -->
 {{-- <script src="{{ asset('/assets/js/cursor.min.js') }}"></script> --}}
