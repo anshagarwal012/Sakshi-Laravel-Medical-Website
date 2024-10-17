@@ -11,7 +11,7 @@
                 <iframe width="350" height="315" src="https://www.youtube.com/embed/PDp42mC3VWg?si=fs3V0SGg-WxS1nlq"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
                 </iframe>
             </div>
             <div class="col- carousel_item">
@@ -19,7 +19,7 @@
                     src="https://www.youtube.com/embed/vKeuI8n4D_w?si=ozokjvTeZWQ6spKo" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
                 </iframe>
             </div>
             <div class="col- carousel_item">
@@ -27,7 +27,7 @@
                     src="https://www.youtube.com/embed/rUJEziZWCck?si=VcQVNVnYClgXgTu-" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
                 </iframe>
             </div>
         </div>
